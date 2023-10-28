@@ -1,4 +1,12 @@
-# blue-nirvana-team
+# Blue Nirvana Project
 
-commit 1
-commit 2
+Ini adalah Project Blue Nirvana yang dibuat oleh Mahasiswa Universitas Pancasila. Project ini dibuat untuk memenuhi tugas mata kuliah Design Web. Untuk anggotanya sendiri adalah sebagai berikut:
+
+## About The Project
+
+Nama project ini adalah movibes, movibes merupakan platform untuk streaming film dan series. Movibes dibuat dengan menggunakan HTML, CSS, dan Javascript. Keunggulan nya adalah movibes memiliki tampilan yang cukup simple dan menarik dalam warna yang memiliki kesan dark mode.
+
+## Getting Started
+
+- clone this repository
+- and then open index.html
