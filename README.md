@@ -10,3 +10,4 @@ Nama project ini adalah movibes, movibes merupakan platform untuk streaming film
 
 - clone this repository
 - and then open index.html
+- testing
