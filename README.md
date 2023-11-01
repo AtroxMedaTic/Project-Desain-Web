@@ -3,7 +3,7 @@
 Ini adalah Project Blue Nirvana yang dibuat oleh Mahasiswa Universitas Pancasila. Project ini dibuat untuk memenuhi tugas mata kuliah Design Web. Untuk anggotanya sendiri adalah sebagai berikut:
 
 -
--
+- Fathan (4522210071)
 -
 -
 -
