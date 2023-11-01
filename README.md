@@ -2,7 +2,7 @@
 
 Ini adalah Project Blue Nirvana yang dibuat oleh Mahasiswa Universitas Pancasila. Project ini dibuat untuk memenuhi tugas mata kuliah Design Web. Untuk anggotanya sendiri adalah sebagai berikut:
 
--
+- Daffa Fathan (4522210082)
 -
 -
 -
@@ -16,4 +16,3 @@ Nama project ini adalah movibes, movibes merupakan platform untuk streaming film
 
 - clone this repository
 - and then open index.html
-- testing
