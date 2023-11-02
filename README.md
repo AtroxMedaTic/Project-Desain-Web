@@ -5,7 +5,7 @@ Ini adalah Project Blue Nirvana yang dibuat oleh Mahasiswa Universitas Pancasila
 -
 - Fathan (4522210071)
 -
--
+- Firja (4522210072)
 -
 
 ## About The Project
