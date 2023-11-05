@@ -3,10 +3,10 @@
 Ini adalah Project Blue Nirvana yang dibuat oleh Mahasiswa Universitas Pancasila. Project ini dibuat untuk memenuhi tugas mata kuliah Design Web. Untuk anggotanya sendiri adalah sebagai berikut:
 
 - Daffa Fathan (4522210082)
--
--
--
--
+- Fathan (4522210071)
+- Valentino (4522210109)
+- Firja (4522210072)
+- tegar (4522210095)
 
 ## About The Project
 
