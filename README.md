@@ -4,7 +4,7 @@ Ini adalah Project Blue Nirvana yang dibuat oleh Mahasiswa Universitas Pancasila
 
 -
 - Fathan (4522210071)
--
+- Valentino (4522210109)
 -
 - tegar (4522210095)
 
