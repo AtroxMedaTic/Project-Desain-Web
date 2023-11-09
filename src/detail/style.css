@@ -1,0 +1,80 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* halaman utama */
+.container{
+    display: flex;
+    min-height: 100vh;
+    background-color: #191919;
+
+
+}
+
+/* kiri */
+.sidebar{
+    background-color: #212121;
+    width: 226px;
+    padding: 25px;
+    display: flex;
+    border-radius: 0px 45px 45px 0px;
+    flex-direction: column;
+}
+
+/* gmbr movie */
+.sidebar .header .list-item .icon1{
+    margin-left: 35px;
+}
+
+/* jarak antara logo utama dengan bar dibawahnya */
+.sidebar .header .ilustrasi{
+    padding: 10px;
+    margin: 85px 0 75px 0;
+    
+}
+
+/* tulisan bar */
+.sidebar .main .list-item .deskripsi{
+    color: #3DD2CC;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* jarak tulisan bar ke icon */
+.sidebar .main .list-item .icon2{
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/* jarak antara setiap bar nya */
+.sidebar .main .list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+    width: 212px;
+    box-sizing: border-box;
+}
+
+/* hover bar */
+.sidebar .main .list-item:hover{
+    background: rgba(61, 210, 204, 0.40);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all .3s ease-in-out;
+}
+
+
+.container .main-konten{
+    align-items: center;
+    justify-content: center;
+}
+
+
