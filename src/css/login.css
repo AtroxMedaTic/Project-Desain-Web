@@ -1,0 +1,9 @@
+body {
+  overflow: hidden;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 96%;
+}
