@@ -114,6 +114,7 @@ input{
     overflow: hidden;
 }
 
+/* ukuran foto profil */
 .notifikasi i, .profil img{
     width: 100%;
     height: 100%;
