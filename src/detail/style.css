@@ -3,13 +3,14 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    
 }
 
 /* halaman utama */
 .container {
     display: flex;
     min-height: 100vh;
-    background-color: #191919;
+    background-color: #191919; 
 }
 
 /* kiri */
@@ -131,18 +132,28 @@ input{
 }   
 
 .video-konten{
-    display: flex;
-    align-content: center;
-    text-align: center;
-    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin-left: 318px;
     margin-top: 80px;
-   
+    position: absolute;
 }
 
 .video-konten iframe{
-    width: 1163px;
+    width: 1155px;
     height: 330px;
-    margin-left: 315px;
     border-radius: 20px;
 } 
+
+.judul-video p{
+    font-size: 23px;
+    color: #E8E8E8;
+    position:absolute;
+    align-items: center;
+    display: flex;
+    width: 800px; 
+    height: 30px;
+    margin-top: 415px;
+    margin-left: -52em;
+}
 
