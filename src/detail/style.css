@@ -109,7 +109,7 @@ input{
 
 /* pengaturan spasi notif dan profil */
 .notifikasi, .profil{
-    margin-right: 30px;
+    margin-right: 35px;
     cursor: pointer;
     padding: 3px;
     border-radius: 50%;
@@ -145,7 +145,7 @@ input{
     border-radius: 20px;
 } 
 
-.judul-video p{
+.judul-video .judul{
     font-size: 23px;
     color: #E8E8E8;
     position:absolute;
@@ -155,5 +155,38 @@ input{
     height: 30px;
     margin-top: 415px;
     margin-left: -52em;
+}
+
+.judul-video .genre1{
+    font-size: 15px;
+    color: #E8E8E8;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100px; 
+    height: 30px;
+    margin-top: 415px;
+    margin-left: -40em;
+    border-radius: 15px;
+    border: 1px solid rgba(232, 232, 232, 0.35);
+
+
+}
+
+.judul-video .genre2{
+    font-size: 15px;
+    color: #E8E8E8;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100px; 
+    height: 30px;
+    margin-top: 415px;
+    margin-left: -32em;
+    border-radius: 15px;
+    border: 1px solid rgba(232, 232, 232, 0.35);
+
 }
 
