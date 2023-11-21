@@ -131,20 +131,23 @@ input{
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }   
 
+/* back video */
 .video-konten{
     width: 10px;
     height: 10px;
-    margin-left: 318px;
+    margin-left: 305px;
     margin-top: 80px;
     position: absolute;
 }
 
+/* ukuran video */
 .video-konten iframe{
-    width: 1155px;
+    width: 1200px;
     height: 330px;
     border-radius: 20px;
 } 
 
+/* ukuran judul film */
 .judul-video .judul{
     font-size: 23px;
     color: #E8E8E8;
@@ -154,9 +157,10 @@ input{
     width: 800px; 
     height: 30px;
     margin-top: 415px;
-    margin-left: -52em;
+    margin-left: -53em;
 }
 
+/* ukuran genre 1 */
 .judul-video .genre1{
     font-size: 15px;
     color: #E8E8E8;
@@ -167,13 +171,12 @@ input{
     width: 100px; 
     height: 30px;
     margin-top: 415px;
-    margin-left: -40em;
+    margin-left: -42em;
     border-radius: 15px;
     border: 1px solid rgba(232, 232, 232, 0.35);
-
-
 }
 
+/* ukuran genre 2 */
 .judul-video .genre2{
     font-size: 15px;
     color: #E8E8E8;
@@ -184,9 +187,76 @@ input{
     width: 100px; 
     height: 30px;
     margin-top: 415px;
-    margin-left: -32em;
+    margin-left: -34em;
     border-radius: 15px;
     border: 1px solid rgba(232, 232, 232, 0.35);
 
+}
+
+/* deskripsi film */
+.judul-video .isifilm{
+    font-size: 20px;
+    color: #E8E8E8;
+    text-align: justify;
+    display: flex;
+    width: 860px;
+    height: 93px;
+    margin-top: 465px;
+    margin-left: -61em;
+}
+
+/* penemapatang rating */
+.rating{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* love */
+.rating .hearth{
+    color: #666;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 410px;
+    margin-left: -19em;
+    font-size: 28px;
+}
+
+/* share */
+.rating .share{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 410px;
+    margin-left: -15em;
+    font-size: 28px;
+}
+
+/* Star */
+.rating .star{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 410px;
+    margin-left: -11em;
+    font-size: 28px;
+}
+
+/* bookmark */
+.rating .bookmark{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 410px;
+    margin-left: -7em;
+    font-size: 28px;
 }
 
