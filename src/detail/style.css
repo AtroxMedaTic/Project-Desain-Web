@@ -109,7 +109,7 @@ input{
 
 /* pengaturan spasi notif dan profil */
 .notifikasi, .profil{
-    margin-right: 35px;
+    margin-right: 20px;
     cursor: pointer;
     padding: 3px;
     border-radius: 50%;
@@ -204,6 +204,97 @@ input{
     margin-top: 465px;
     margin-left: -61em;
 }
+
+/* garis 1 */
+.judul-video .horizontal1{
+    background-color: #E8E8E8;
+    width: 860px;
+    height: 1px;
+    margin-top: 75px;
+    margin-left: -76.2em;
+   
+}
+
+/* director */
+.judul-video .director{
+    font-size: 20px;
+    color: #E8E8E8;
+    display: flex;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -61em;
+}
+
+/* nama director */
+.judul-video .nama{
+    font-size: 20px;
+    color: #3DD2CC;
+    display: flex;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -56.3em;
+}
+
+/* garis2 */
+.judul-video .horizontal2{
+    background-color: #E8E8E8;
+    width: 860px;
+    height: 1px;
+    margin-top: 65px;
+    margin-left: -76.2em;
+   
+}
+
+/* writer */
+.judul-video .writers{
+    font-size: 20px;
+    color: #E8E8E8;
+    display: flex;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -61em;
+}
+
+/* nama penulis */
+.judul-video .penulis{
+    font-size: 20px;
+    color: #3DD2CC;
+    display: flex;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -56.8em;
+}
+
+/* garis3 */
+.judul-video .horizontal3{
+    background-color: #E8E8E8;
+    width: 860px;
+    height: 1px;
+    margin-top: 65px;
+    margin-left: -76.2em;
+   
+}
+
+/* pemain */
+.judul-video .pemain{
+    font-size: 20px;
+    color: #E8E8E8;
+    display: flex;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -61em;
+}
+
+/* pemerannya */
+.judul-video .pemeran{
+    font-size: 20px;
+    color: #3DD2CC;
+    display: flex;
+    width: 500px;
+    margin-top: 15px;
+    margin-left: -57.7em;
+} 
+
 
 /* penemapatang rating */
 .rating{
