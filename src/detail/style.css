@@ -16,12 +16,41 @@
 /* kiri */
 .sidebar {
     background-color: #212121;
+    position: fixed;
+    height: 100%;
     width: 226px;
     padding: 25px;
     display: flex;
     border-radius: 0px 45px 45px 0px;
     flex-direction: column;
 }
+
+.container{
+    position: relative;
+    z-index: 1;
+}
+
+.main-konten{
+    position: relative;
+    z-index: 1;
+}
+
+.video-konten{
+    position: relative;
+    z-index: 1;
+}
+
+.judul-video{
+    position: relative;
+    z-index: 1;
+}
+
+.rating{
+    position: relative;
+    z-index: 1;
+}
+
+
 
 /* gmbr movie */
 .sidebar .header .list-item .icon1 {
@@ -85,6 +114,7 @@
 .searchbar{
     display: flex; 
     align-items: center;
+    margin-left: 250px;
     margin-right: 380px;
     font-size: 35px;
 }
@@ -157,7 +187,7 @@ input{
     width: 800px; 
     height: 30px;
     margin-top: 415px;
-    margin-left: -53em;
+    margin-left: -51em;
 }
 
 /* ukuran genre 1 */
@@ -202,7 +232,7 @@ input{
     width: 860px;
     height: 93px;
     margin-top: 465px;
-    margin-left: -61em;
+    margin-left: -58.6em;
 }
 
 /* garis 1 */
@@ -211,7 +241,7 @@ input{
     width: 860px;
     height: 1px;
     margin-top: 75px;
-    margin-left: -76.2em;
+    margin-left: -73.2em;
    
 }
 
@@ -222,7 +252,7 @@ input{
     display: flex;
     position: absolute;
     margin-top: 15px;
-    margin-left: -61em;
+    margin-left: -58.6em;
 }
 
 /* nama director */
@@ -232,16 +262,16 @@ input{
     display: flex;
     position: absolute;
     margin-top: 15px;
-    margin-left: -56.3em;
+    margin-left: -53.8em;
 }
 
 /* garis2 */
 .judul-video .horizontal2{
     background-color: #E8E8E8;
     width: 860px;
-    height: 1px;
-    margin-top: 65px;
-    margin-left: -76.2em;
+    height: 2px;
+    margin-top: 60px;
+    margin-left: -73.2em;
    
 }
 
@@ -252,7 +282,7 @@ input{
     display: flex;
     position: absolute;
     margin-top: 15px;
-    margin-left: -61em;
+    margin-left: -58.5em;
 }
 
 /* nama penulis */
@@ -262,16 +292,16 @@ input{
     display: flex;
     position: absolute;
     margin-top: 15px;
-    margin-left: -56.8em;
+    margin-left: -54.2em;
 }
 
 /* garis3 */
 .judul-video .horizontal3{
     background-color: #E8E8E8;
     width: 860px;
-    height: 1px;
+    height: 2px;
     margin-top: 65px;
-    margin-left: -76.2em;
+    margin-left: -73.1em;
    
 }
 
@@ -282,7 +312,7 @@ input{
     display: flex;
     position: absolute;
     margin-top: 15px;
-    margin-left: -61em;
+    margin-left: -58.5em;
 }
 
 /* pemerannya */
@@ -292,8 +322,22 @@ input{
     display: flex;
     width: 500px;
     margin-top: 15px;
-    margin-left: -57.7em;
+    margin-left: -55.2em;
 } 
+
+.judul-video .rate{
+    font-size: 20px;
+    color: #FFF;
+    background-color: rgba(61, 210, 204, 0.70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 253px;
+    height: 55px;
+    margin-top: 70px;
+    margin-left: -58.6em;
+    border-radius: 10px;
+}
 
 
 /* penemapatang rating */
@@ -311,7 +355,7 @@ input{
     width: 30px;
     height: 30px;
     margin-top: 410px;
-    margin-left: -19em;
+    margin-left: -14em;
     font-size: 28px;
 }
 
@@ -323,7 +367,7 @@ input{
     width: 30px;
     height: 30px;
     margin-top: 410px;
-    margin-left: -15em;
+    margin-left: -10em;
     font-size: 28px;
 }
 
@@ -335,7 +379,7 @@ input{
     width: 30px;
     height: 30px;
     margin-top: 410px;
-    margin-left: -11em;
+    margin-left: -6em;
     font-size: 28px;
 }
 
@@ -347,7 +391,7 @@ input{
     width: 30px;
     height: 30px;
     margin-top: 410px;
-    margin-left: -7em;
+    margin-left: -2em;
     font-size: 28px;
 }
 
