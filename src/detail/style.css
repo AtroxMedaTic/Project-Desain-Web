@@ -395,3 +395,35 @@ input{
     font-size: 28px;
 }
 
+
+.rating .tiket{
+    background-color: rgba(61, 210, 204, 0.70);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 55px;
+    border-radius: 10px;
+    margin-left: -12em;
+    margin-top: 25em;
+}
+
+
+.rating .watchopsion{
+    background-color: rgba(61, 210, 204, 0.70);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 55px;
+    border-radius: 10px;
+    margin-left: -13em;
+    margin-top: 555.6px;
+    
+} 
+
+.tiket1, .tiket2{
+    color: #FFF;
+}
