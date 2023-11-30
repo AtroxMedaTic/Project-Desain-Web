@@ -1,0 +1,192 @@
+*,
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+
+}
+
+/* halaman utama */
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #191919;
+}
+
+/* kiri */
+.sidebar {
+  background-color: #212121;
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  padding: 25px;
+  display: flex;
+  border-radius: 0px 45px 45px 0px;
+  flex-direction: column;
+}
+
+.sidebar .list-item .logo {
+  margin-left: 29px;
+}
+
+.video-konten {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* jarak antara logo utama dengan bar dibawahnya */
+.sidebar .header .ilustrasi {
+  padding: 10px;
+  /* atas kanan kiri bawah */
+  margin: 0px 0 75px 0;
+
+}
+
+/* tulisan bar */
+.sidebar .main .list-item .deskripsi-home {
+  position: relative;
+  color: #3DD2CC;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sidebar .main .list-item .deskripsi {
+  position: relative;
+  color: #666;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* jarak tulisan bar ke icon */
+.sidebar .main .list-item i {
+  color: #666;
+  font-size: 25px;
+  margin-right: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* jarak antara setiap bar nya */
+.sidebar .main .list-item {
+  align-items: center;
+  padding: 12px 10px;
+  border-radius: 8px;
+  width: 212px;
+  box-sizing: border-box;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* hover bar */
+.sidebar .main .list-item:hover {
+  background: rgba(61, 210, 204, 0.40);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all .3s ease-in-out;
+}
+
+/* pembungkus search bar */
+.main-konten {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  height: 38px;
+}
+
+/* search bar */
+.searchbar {
+  position: relative;
+  left: 15rem;
+  font-size: 35px;
+}
+
+/* icon search */
+.searchbar i {
+  color: #666;
+  margin-right: 15px;
+  margin-left: 37px;
+}
+
+.search-button {
+  float: right;
+  height: 40px;
+  width: 40px;
+}
+
+
+/* input search */
+input {
+  padding: 10px;
+  width: 650px;
+  border: none;
+  border-radius: 30px;
+  background-color: #212121;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
+  color: #666
+}
+
+/* pengaturan spasi notif dan profil */
+.notifikasi,
+.profil {
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* ukuran foto profil */
+.notifikasi i,
+.profil img {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+/* ukuran font profil dan notif */
+.notifikasi i,
+.profil i {
+  font-size: 34px;
+  color: #666;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* back video */
+.video-konten {
+  width: 10px;
+  height: 10px;
+  margin-left: 290px;
+  margin-top: 80px;
+  position: absolute;
+}
+
+/* ukuran video */
+.video-konten iframe {
+  width: 900px;
+  height: 330px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.trending {
+  color: #E8E8E8;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.kotak-film {
+  padding: 10px;
+}
