@@ -10,7 +10,7 @@
 .container {
     display: flex;
     width: 100%;
-    /* min-height: 100vh; */
+    min-height: 100vh; 
     background-color: #191919; 
 }
 
@@ -202,7 +202,7 @@ input{
     width: 100px; 
     height: 30px;
     margin-top: 415px;
-    margin-left: -42em;
+    margin-left: -34em;
     border-radius: 15px;
     border: 1px solid rgba(232, 232, 232, 0.35);
 }
@@ -218,7 +218,7 @@ input{
     width: 100px; 
     height: 30px;
     margin-top: 415px;
-    margin-left: -34em;
+    margin-left: -27em;
     border-radius: 15px;
     border: 1px solid rgba(232, 232, 232, 0.35);
 
@@ -428,3 +428,4 @@ input{
 .tiket1, .tiket2{
     color: #FFF;
 }
+
