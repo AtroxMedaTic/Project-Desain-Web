@@ -1,0 +1,431 @@
+*, body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+/* halaman utama */
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; 
+    background-color: #191919; 
+}
+
+/* kiri */
+.sidebar {
+    background-color: #212121;
+    position: fixed;
+    height: 100%;
+    width: 226px;
+    padding: 25px;
+    display: flex;
+    border-radius: 0px 45px 45px 0px;
+    flex-direction: column;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+}
+
+.main-konten{
+    position: relative;
+    z-index: 1;
+}
+
+.video-konten{
+    position: relative;
+    z-index: 1;
+}
+
+.judul-video{
+    position: relative;
+    z-index: 1;
+}
+
+.rating{
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* gmbr movie */
+.sidebar .header .list-item .icon1 {
+    margin-left: 35px;
+}
+
+/* jarak antara logo utama dengan bar dibawahnya */
+.sidebar .header .ilustrasi {
+    padding: 10px;
+    margin: 85px 0 75px 0;
+
+}
+
+/* tulisan bar */
+.sidebar .main .list-item .deskripsi {
+    position: relative;
+    color: #3DD2CC;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* jarak tulisan bar ke icon */
+.sidebar .main .list-item i {
+    color: #666;
+    font-size: 25px;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* jarak antara setiap bar nya */
+.sidebar .main .list-item {
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+    width: 212px;
+    box-sizing: border-box;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+/* hover bar */
+.sidebar .main .list-item:hover {
+    background: rgba(61, 210, 204, 0.40);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all .3s ease-in-out;
+}
+
+/* pembungkus search bar */
+.main-konten{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    height: 38px;
+}
+
+/* search bar */
+.searchbar{
+    display: flex; 
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 380px;
+    font-size: 35px;
+}
+
+/* icon search */
+.searchbar i{
+    color: #666;
+    margin-right: 15px;
+    margin-left: 37px;
+}
+
+/* input search */
+input{
+    padding: 8px;
+    width: 600px;
+    border: none;
+    border-radius: 30px;
+    background-color: #212121;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
+    color:#666
+}
+
+/* pengaturan spasi notif dan profil */
+.notifikasi, .profil{
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* ukuran foto profil */
+.notifikasi i, .profil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* ukuran font profil dan notif */
+.notifikasi i, .profil i{
+    font-size: 34px;
+    color: #666;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}   
+
+/* back video */
+.video-konten{
+    width: 10px;
+    height: 10px;
+    margin-left: 305px;
+    margin-top: 80px;
+    position: absolute;
+}
+
+/* ukuran video */
+.video-konten iframe{
+    width: 1200px;
+    height: 330px;
+    border-radius: 20px;
+} 
+
+/* ukuran judul film */
+.judul-video .judul{
+    font-size: 23px;
+    color: #E8E8E8;
+    position:absolute;
+    align-items: center;
+    display: flex;
+    width: 800px; 
+    height: 30px;
+    margin-top: 415px;
+    margin-left: -51em;
+}
+
+/* ukuran genre 1 */
+.judul-video .genre1{
+    font-size: 15px;
+    color: #E8E8E8;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100px; 
+    height: 30px;
+    margin-top: 415px;
+    margin-left: -34em;
+    border-radius: 15px;
+    border: 1px solid rgba(232, 232, 232, 0.35);
+}
+
+/* ukuran genre 2 */
+.judul-video .genre2{
+    font-size: 15px;
+    color: #E8E8E8;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100px; 
+    height: 30px;
+    margin-top: 415px;
+    margin-left: -27em;
+    border-radius: 15px;
+    border: 1px solid rgba(232, 232, 232, 0.35);
+
+}
+
+/* deskripsi film */
+.judul-video .isifilm{
+    font-size: 20px;
+    color: #E8E8E8;
+    text-align: justify;
+    display: flex;
+    width: 860px;
+    height: 93px;
+    margin-top: 465px;
+    margin-left: -58.6em;
+}
+
+/* garis 1 */
+.judul-video .horizontal1{
+    background-color: #E8E8E8;
+    width: 860px;
+    height: 1px;
+    margin-top: 75px;
+    margin-left: -73.2em;
+   
+}
+
+/* director */
+.judul-video .director{
+    font-size: 20px;
+    color: #E8E8E8;
+    display: flex;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -58.6em;
+}
+
+/* nama director */
+.judul-video .nama{
+    font-size: 20px;
+    color: #3DD2CC;
+    display: flex;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -53.8em;
+}
+
+/* garis2 */
+.judul-video .horizontal2{
+    background-color: #E8E8E8;
+    width: 860px;
+    height: 2px;
+    margin-top: 60px;
+    margin-left: -73.2em;
+   
+}
+
+/* writer */
+.judul-video .writers{
+    font-size: 20px;
+    color: #E8E8E8;
+    display: flex;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -58.5em;
+}
+
+/* nama penulis */
+.judul-video .penulis{
+    font-size: 20px;
+    color: #3DD2CC;
+    display: flex;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -54.2em;
+}
+
+/* garis3 */
+.judul-video .horizontal3{
+    background-color: #E8E8E8;
+    width: 860px;
+    height: 2px;
+    margin-top: 65px;
+    margin-left: -73.1em;
+   
+}
+
+/* pemain */
+.judul-video .pemain{
+    font-size: 20px;
+    color: #E8E8E8;
+    display: flex;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -58.5em;
+}
+
+/* pemerannya */
+.judul-video .pemeran{
+    font-size: 20px;
+    color: #3DD2CC;
+    display: flex;
+    width: 500px;
+    margin-top: 15px;
+    margin-left: -55.2em;
+} 
+
+.judul-video .rate{
+    font-size: 20px;
+    color: #FFF;
+    background-color: rgba(61, 210, 204, 0.70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 253px;
+    height: 55px;
+    margin-top: 70px;
+    margin-left: -58.6em;
+    border-radius: 10px;
+}
+
+
+/* penemapatang rating */
+.rating{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* love */
+.rating .hearth{
+    color: #666;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 410px;
+    margin-left: -14em;
+    font-size: 28px;
+}
+
+/* share */
+.rating .share{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 410px;
+    margin-left: -10em;
+    font-size: 28px;
+}
+
+/* Star */
+.rating .star{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 410px;
+    margin-left: -6em;
+    font-size: 28px;
+}
+
+/* bookmark */
+.rating .bookmark{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 410px;
+    margin-left: -2em;
+    font-size: 28px;
+}
+
+
+.rating .tiket{
+    background: rgba(61, 210, 204, 0.70);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 55px;
+    border-radius: 10px;
+    margin-left: -12em;
+    margin-top: 25em;
+}
+
+.rating .watchopsion{
+    background-color: rgba(61, 210, 204, 0.70);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 55px;
+    border-radius: 10px;
+    margin-left: -13em;
+    margin-top: 556.5px;
+    
+} 
+
+
+.tiket1, .tiket2{
+    color: #FFF;
+}
+
