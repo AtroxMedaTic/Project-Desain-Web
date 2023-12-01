@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moviebes</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/src/assets/css/style.css">
+  <link rel="stylesheet" href="/src/assets/css/sidebar.css">
+  <link rel="stylesheet" href="/src/assets/css/topbar.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- fonts google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="bg-dark">
+    <div class="row text-center text-white fw-bold">
+      <div class="col">
+        <div class="sidebar">
+          <div class="header">
+            <div class="list-item">
+              <a href="#">
+                <img src="/img/svg/moviebes.svg" alt="" class="logo">
+              </a>
+            </div>
+          </div>
+          <div class="main">
+            <ul class="navbar">
+              <li class="sidebar-menu">
+                <a href="#" class="active-link">
+                  <i class="ri-home-line"></i>
+                  <span class="deskripsi-home">Home</span>
+                </a>
+              </li>
+              <li class="sidebar-menu">
+                <a href="#">
+                  <i class="ri-movie-line"></i>
+                  <span class="deskripsi">Movies</span>
+                </a>
+              </li>
+              <li class="sidebar-menu">
+                <a href="#">
+                  <i class="ri-tv-2-line"></i>
+                  <span class="deskripsi">TV Series</span>
+                </a>
+              </li>
+              <li class="sidebar-menu">
+                <a href="#">
+                  <i class="ri-calendar-2-line"></i>
+                  <span class="deskripsi">Upcoming</span>
+                </a>
+              </li>
+              <li class="sidebar-menu" style="margin-top: 10rem;">
+                <a href="#">
+                  <i class="ri-logout-box-r-line"></i>
+                  <span class="deskripsi">Log Out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="topbar">
+        <div class="searchbar">
+          <i class="ri-search-line"></i>
+          <input type="text" placeholder="Search For Movies, TV Shows ...">
+        </div>
+        <div class="right-side">
+          <div class="notifikasi">
+            <i class="ri-notification-line"></i>
+          </div>
+          <div class="profil">
+            <img src="/img/cloud-clouds.gif" alt="Profil Pengguna">
+          </div>
+        </div>
+      </div>
+      <div class="col-10" style="background-color: green;">
+        <!--  BAGIAN FIRJA -->
+        <!-- ini semua masih blm terpanggi, sepertinya karena css nya di utak atik -->
+        <!-- trus juga klo mau utak atik css nya di file main.css aja ya ja -->
+        <div class="main-konten">
+          <section class="video-konten">
+            <img src="/img/movies/moonfall.png"" alt=" moonfall">
+            <h1 style="color: white; font-size:24px;">Trending</h1>
+            <div class="" style="display: flex">
+              <div class="kotak-film">
+                <img src="/img/movies/house_of_dragon.png" width="200px" height="315px">
+              </div>
+
+              <div class="kotak-film">
+                <img src="/img/movies/top_gun.png" alt="Film 2">
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="col-2" style="background-color:red">
+        <!-- BAGIAN VALEN -->
+        <!-- untuk valen klo mau main css utak atik di sidebar-left.css aja yah len -->
+        sidebar kanan
+      </div>
+    </div>
+  </div>
+
+  <script src="/src/assets/js/script.js"></script>
+</body>
+
+</html>
