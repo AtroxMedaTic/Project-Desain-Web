@@ -1,0 +1,73 @@
+/* search bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topbar .searchbar i {
+  font-size: 40px;
+  color: #666;
+  padding: 2rem;
+  margin-left: 12rem;
+  position: relative;
+  top: .5rem;
+}
+
+.topbar .searchbar input {
+  padding: 10px;
+  width: 650px;
+  height: 35px;
+  margin-top: 1rem;
+  border: #666 solid 1px;
+  border-radius: 30px;
+  background-color: #212121;
+  color: #666;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+/* pengaturan spasi notif dan profil */
+
+.topbar .right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+
+.topbar .right-side .notifikasi,
+.topbar .right-side .profil {
+  cursor: pointer;
+  margin-top: .5rem;
+  padding: 3px;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* ukuran foto profil */
+.topbar .right-side .notifikasi i,
+.topbar .right-side .profil img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+/* ukuran font profil dan notif */
+.topbar .right-side .notifikasi i,
+.topbar .right-side .profil i {
+  font-size: 34px;
+  color: #666;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}

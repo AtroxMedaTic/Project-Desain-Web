@@ -1,0 +1,59 @@
+/* kiri */
+.sidebar {
+  background-color: #212121;
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  padding: 25px;
+  display: flex;
+  border-radius: 0px 45px 45px 0px;
+  flex-direction: column;
+  -webkit-border-radius: 0px 45px 45px 0px;
+  -moz-border-radius: 0px 45px 45px 0px;
+  -ms-border-radius: 0px 45px 45px 0px;
+  -o-border-radius: 0px 45px 45px 0px;
+}
+
+.sidebar .list-item .logo {
+  margin: auto;
+}
+
+.sidebar .main {
+  margin-top: 8rem;
+  margin-left: -1rem;
+}
+
+.sidebar .sidebar-menu {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+}
+
+.sidebar .sidebar-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+
+}
+
+.sidebar .main .sidebar-menu .active-link {
+  color: #3DD2CC;
+  border-bottom: #3DD2CC solid 5px;
+}
+
+/* jarak tulisan bar ke icon */
+.sidebar .main .navbar .sidebar-menu a i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* hover bar */
+.sidebar .main .sidebar-menu:hover a,
+.sidebar .main .sidebar-menu:hover a i {
+  color: #3DD2CC;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
