@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0;
   text-decoration: none;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .main-konten {
@@ -15,14 +15,14 @@ body {
 }
 
 /* back video */
-.video-konten {
+/* .video-konten {
   width: 10px;
   height: 10px;
   margin-left: 290px;
   margin-top: 80px;
   position: relative;
   z-index: 1;
-}
+} */
 
 /* ukuran video */
 .video-konten iframe {
@@ -34,14 +34,14 @@ body {
   border-bottom-left-radius: 30px;
 }
 
-.trending {
+/* .trending {
   color: #E8E8E8;
   font-family: Poppins;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-}
+} */
 
 .kotak-film {
   padding: 10px;
