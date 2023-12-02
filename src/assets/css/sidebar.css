@@ -20,31 +20,40 @@
 
 .sidebar .main {
   margin-top: 8rem;
-  margin-left: -1rem;
+  margin-left: -1.5rem;
+  width: 200px;
 }
 
 .sidebar .sidebar-menu {
+  margin: auto;
   list-style: none;
-  margin-bottom: 1.5rem;
+  display: flex;
   font-size: 18px;
+  width: 200px;
+  height: 60px;
 }
 
 .sidebar .sidebar-menu a {
   text-decoration: none;
   color: white;
   font-weight: 600;
-
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .sidebar .main .sidebar-menu .active-link {
   color: #3DD2CC;
-  border-bottom: #3DD2CC solid 5px;
+  background-color: rgba(61, 210, 204, 0.40);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* jarak tulisan bar ke icon */
 .sidebar .main .navbar .sidebar-menu a i {
   font-size: 18px;
   margin-right: 10px;
+  margin-top: 100px;
 }
 
 /* hover bar */
