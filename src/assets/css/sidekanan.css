@@ -1,0 +1,83 @@
+.kategori{
+    position: relative;
+    top: 50px;
+    right: 275px;
+    font-size: 20px;
+    height: 25px;
+    width: 100px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.uncheck1{
+    position: relative;
+    margin-top: 66px;
+    font-size: 14px;
+    margin-left: -200px;
+    height: 30px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.kluargakanan{
+    position:absolute;
+    margin-left: 89em;
+    margin-top: 150px;
+}
+
+.checkbox {
+    width: 254px;
+    height: 330px;
+    margin-left: -230px;
+    margin-top: -25px;
+    flex-shrink: 0;
+    background-color: #212121;
+    border-radius: 30px;
+    padding: 7px 12px 7px 12px;
+    color: #ffffff;
+}
+
+.minibox {
+    width: 235px;
+    height: 25px;
+    margin: 10px auto;
+    background-color:#212121;
+    padding: 7px 5px 7px 5px;
+    font-size: 18px;
+}
+
+.checkbox .lebih {
+    width: 254px;
+    height: 10px;
+    text-align: center;
+}
+
+.services{
+    position: relative;
+    margin-top: 10px;
+    bottom: 5px;
+    right: 240px;
+    font-size: 20px;
+    height: 25px;
+    width: 100px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.uncheck2{
+    position: relative;
+    top: -28px;
+    font-size: 14px;
+    margin-left: -50px;
+    height: 30px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
