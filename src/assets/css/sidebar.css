@@ -22,11 +22,11 @@
   margin-top: 8rem;
   margin-left: -1.5rem;
   width: 200px;
-  /* background-color: blue; */
 }
 
 .sidebar .sidebar-menu {
   list-style: none;
+  text-align: center;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -35,7 +35,7 @@
   font-size: 18px;
   width: 200px;
   height: 60px;
-  /* background-color: chocolate; */
+  
   
 }
 
@@ -47,7 +47,7 @@
   height: 50px;
   border-radius: 5px;
   box-sizing: border-box; 
-  /* background-color: crimson; */
+  
   
 }
 
