@@ -1,5 +1,6 @@
 /* kiri */
 .sidebar {
+  overflow: hidden !important;
   background-color: #212121;
   position: fixed;
   height: 100%;
@@ -14,12 +15,14 @@
   -o-border-radius: 0px 45px 45px 0px;
 }
 
+
 .sidebar .list-item .logo {
   margin: auto;
 }
 
 .sidebar .main {
-  margin-top: 8rem;
+  position: relative;
+  top: 8rem;
   margin-left: -1.5rem;
   width: 200px;
 }
