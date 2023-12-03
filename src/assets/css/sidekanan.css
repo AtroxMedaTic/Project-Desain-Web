@@ -1,16 +1,22 @@
-.kategori a {
+.title-sidekanan a {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.uncheck1 a {
   position: relative;
-  font-size: 20px;
-  width: 100%;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
+  top: -10px;
+  left: 105px;
+  font-size: 14px;
   text-align: center;
   text-decoration: none;
 }
 
-.uncheck1 a,
 .uncheck2 a {
+  position: relative;
+  bottom: 10px;
+  left: 100px;
   font-size: 14px;
   text-align: center;
   text-decoration: none;
@@ -38,6 +44,7 @@
 
 .kluargakanan .checkbox .minibox {
   overflow: hidden;
+  border-bottom: 1px solid #ffffff;
   width: 235px;
   height: 30px;
   margin: 10px auto;
@@ -49,19 +56,5 @@
 .checkbox .lebih {
   width: 254px;
   height: 10px;
-  text-align: center;
-}
-
-.services {
-  position: relative;
-  margin-top: 10px;
-  bottom: 5px;
-  right: 240px;
-  font-size: 20px;
-  height: 25px;
-  width: 100px;
-  padding: 5px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
