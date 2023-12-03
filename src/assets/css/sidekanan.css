@@ -1,17 +1,10 @@
-.kategori a{
-  position: relative;
-  top: -25px;
-  right: 95px;
-  font-size: 20px;
-  width: 100%;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.title-sidekanan a {
+  margin-top: 2rem;
+  margin-right: 1rem;
   text-decoration: none;
 }
 
-.uncheck1 a{
+.uncheck1 a {
   position: relative;
   top: -10px;
   left: 105px;
@@ -20,24 +13,11 @@
   text-decoration: none;
 }
 
-.uncheck2 a{
+.uncheck2 a {
   position: relative;
   bottom: 10px;
   left: 100px;
   font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.services a{
-  position: relative;
-  top: 15px;
-  right: 95px;
-  font-size: 20px;
-  width: 100px;
-  padding: 5px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   text-decoration: none;
 }
