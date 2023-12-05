@@ -22,24 +22,34 @@
 
 .sidebar .main {
   position: relative;
-  top: 8rem;
-  margin-left: -1.5rem;
-  width: 200px;
+  top: 15rem;
+  margin-left: -4.2rem;
+  width: 250px;
 }
 
 .sidebar .sidebar-menu {
   margin: auto;
   list-style: none;
   display: flex;
-  font-size: 18px;
+  font-size: 20px;
   width: 200px;
   height: 60px;
+}
+
+.sidebar-menu .deskripsi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -18px;
+}
+
+.sidebar-menu i{
+ margin-right: 20px;
 }
 
 .sidebar .sidebar-menu a {
   text-decoration: none;
   color: white;
-  font-weight: 600;
   width: 200px;
   height: 50px;
   border-radius: 5px;
@@ -63,6 +73,7 @@
 .sidebar .main .sidebar-menu:hover a,
 .sidebar .main .sidebar-menu:hover a i {
   color: #3DD2CC;
+  background-color: rgba(61, 210, 204, 0.40);
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
