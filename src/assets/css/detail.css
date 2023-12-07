@@ -181,7 +181,7 @@ input {
 /* ukuran video */
 .video-konten iframe {
   width: 1355px;
-  height: 350px;
+  height: 400px;
   border-radius: 20px;
 }
 
@@ -194,7 +194,7 @@ input {
   display: flex;
   width: 800px;
   height: 30px;
-  margin-top: 435px;
+  margin-top: 485px;
   margin-left: -58em;
 }
 
@@ -208,7 +208,7 @@ input {
   display: flex;
   width: 100px;
   height: 30px;
-  margin-top: 435px;
+  margin-top: 485px;
   margin-left: -45.5em;
   border-radius: 15px;
   border: 1px solid rgba(232, 232, 232, 0.35);
@@ -224,7 +224,7 @@ input {
   display: flex;
   width: 100px;
   height: 30px;
-  margin-top: 435px;
+  margin-top: 485px;
   margin-left: -38em;
   border-radius: 15px;
   border: 1px solid rgba(232, 232, 232, 0.35);
@@ -239,7 +239,7 @@ input {
   display: flex;
   width: 860px;
   height: 93px;
-  margin-top: 475px;
+  margin-top: 520px;
   margin-left: -66.5em;
 }
 
@@ -342,7 +342,7 @@ input {
   justify-content: center;
   width: 253px;
   height: 55px;
-  margin-top: 70px;
+  margin-top: 80px;
   margin-left: -66.5em;
   border-radius: 10px;
 }
@@ -362,7 +362,7 @@ input {
   align-items: center;
   width: 30px;
   height: 30px;
-  margin-top: 430px;
+  margin-top: 480px;
   margin-left: -15em;
   font-size: 28px;
 }
@@ -374,7 +374,7 @@ input {
   align-items: center;
   width: 30px;
   height: 30px;
-  margin-top: 430px;
+  margin-top: 480px;
   margin-left: -11em;
   font-size: 28px;
 }
@@ -386,7 +386,7 @@ input {
   align-items: center;
   width: 30px;
   height: 30px;
-  margin-top: 430px;
+  margin-top: 480px;
   margin-left: -7em;
   font-size: 28px;
 }
@@ -398,7 +398,7 @@ input {
   align-items: center;
   width: 30px;
   height: 30px;
-  margin-top: 430px;
+  margin-top: 480px;
   margin-left: -3em;
   font-size: 28px;
 }
@@ -415,7 +415,7 @@ input {
   height: 80px;
   border-radius: 10px;
   margin-left: -18em;
-  margin-top: 25em;
+  margin-top: 27em;
 }
 
 .rating .watchopsion {
@@ -429,7 +429,7 @@ input {
   height: 80px;
   border-radius: 10px;
   margin-left: -18em;
-  margin-top: 29.3em;
+  margin-top: 31.3em;
 
 }
 
