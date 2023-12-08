@@ -1,4 +1,3 @@
-/* Atur tinggi gambar agar sesuai dengan tinggi layar */
 .full-image {
   height: 100vh;
   background-size: cover;
@@ -7,7 +6,6 @@
   align-items: center;
 }
 
-/* Atur konten di tengah sisi kanan */
 .center-content {
   display: flex;
   justify-content: center;
