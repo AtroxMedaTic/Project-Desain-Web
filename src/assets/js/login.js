@@ -7,10 +7,9 @@
       return;
     }
 
-    // Ambil data pengguna yang sudah ada di localStorage
+    // get data from localStorage
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
-    // Cek apakah ada pengguna dengan email dan password yang sesuai
     const user = users.find(function(u) {
       return u.email === email && u.password === password;
     });
@@ -18,7 +17,7 @@
     if (user) {
       setTimeout(() => {
         window.location.assign('/src/views/homepage.html');
-      }, 1000);
+      }, 500);
       showToast('Login berhasil. Selamat datang, ' + user.username + '!', 'success');
     } else {
       showToast('Gagal login. Email atau password tidak valid.', 'danger');

@@ -17,11 +17,10 @@ function registerUser() {
         password: password
       };
 
-      // Ambil data pengguna yang sudah ada di localStorage
+      // Ambil data di localStorage
       let existingUsers = JSON.parse(localStorage.getItem('users')) || [];
       console.log(existingUsers);
 
-      // Tambahkan pengguna baru ke dalam array
       existingUsers.push(newUser);
 
       // Simpan data ke dalam localStorage
