@@ -1,6 +1,33 @@
-img {
-  width: auto;
-  height: 100%;
-  background-size: auto;
+/* Atur tinggi gambar agar sesuai dengan tinggi layar */
+.full-image {
+  height: 100vh;
+  background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Atur konten di tengah sisi kanan */
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn-login:hover {
+  color: #3DD2CC !important;
+}
+
+@media (max-width: 767px) {
+
+  /* Sembunyikan sisi kiri saat lebar layar kurang dari atau sama dengan 767px */
+  .full-image,
+  .movibes-logo {
+    display: none;
+  }
+
+  .title-create {
+    font-size: 2.5rem !important;
+  }
 }
