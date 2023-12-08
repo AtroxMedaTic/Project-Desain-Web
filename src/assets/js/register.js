@@ -30,21 +30,36 @@ function registerUser() {
       showToast('Pendaftaran berhasil. Data tersimpan.', 'text-bg-success');
     }
 
-    function showToast(message, toastColor) {
-      const toastContainer = document.getElementById('toastContainer');
-      toastContainer.innerHTML = `
-      <div class="toast align-items-center ${toastColor} rounded-2 p-2 w-auto" role="alert" aria-live="assertive"
-            aria-atomic="true">
-            <div class="d-flex">
-              <div class="toast-body">
-                ${message}
-              </div>
-              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-                aria-label="Close"></button>
-            </div>
-          </div>
-    `;
+function showToast(message, toastColor) {
+  const toastContainer = document.getElementById('toastContainer');
+  toastContainer.innerHTML = `
+    <div class="toast align-items-center ${toastColor} rounded-2 p-2 w-auto" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          ${message}
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  `;
 
-      const toast = new bootstrap.Toast(document.querySelector('.toast'));
-      toast.show();
-    }
+  const toast = new bootstrap.Toast(document.querySelector('.toast'));
+  toast.show();
+}
+
+function googleLogin() {
+  const toastContainer = document.getElementById('toastContainer');
+  toastContainer.innerHTML = `
+    <div class="toast align-items-center text-bg-danger rounded-2 p-2 w-auto" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Fitur Belum Tersedia
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  `;
+
+  const toast = new bootstrap.Toast(document.querySelector('.toast'));
+  toast.show();
+}
