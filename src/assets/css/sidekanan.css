@@ -46,15 +46,18 @@
   overflow: hidden;
   border-bottom: 1px solid #ffffff;
   width: 235px;
-  height: 30px;
   margin: 10px auto;
   background-color: #212121;
-  padding: 7px 5px 7px 5px;
+  /* padding: 7px 5px 7px 5px; */
   font-size: 18px;
 }
 
 .checkbox .lebih {
   width: 254px;
-  height: 10px;
+  /* height: 10px; */
   text-align: center;
+}
+
+.kluargakanan >.minibox p {
+  margin-bottom: 0;
 }
