@@ -18,9 +18,10 @@ body {
 /* kiri */
 .sidebar {
   background-color: #212121;
+  overflow: hidden !important;
   position: fixed;
   height: 100%;
-  width: 226px;
+  width: 200px;
   padding: 25px;
   display: flex;
   border-radius: 0px 45px 45px 0px;
@@ -100,6 +101,7 @@ body {
 /* hover bar */
 .sidebar .main .list-item:hover {
   background: rgba(61, 210, 204, 0.40);
+  width: 224px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   transition: all .3s ease-in-out;
 }
@@ -131,7 +133,7 @@ body {
 /* input search */
 input {
   padding: 8px;
-  width: 600px;
+  width: 800px;
   border: none;
   border-radius: 30px;
   background-color: #212121;
@@ -142,7 +144,8 @@ input {
 /* pengaturan spasi notif dan profil */
 .notifikasi,
 .profil {
-  margin-right: 20px;
+ 
+  margin-left: 10px;
   cursor: pointer;
   padding: 3px;
   border-radius: 50%;
@@ -161,7 +164,7 @@ input {
 /* ukuran font profil dan notif */
 .notifikasi i,
 .profil i {
-  font-size: 34px;
+  font-size: 35px;
   color: #666;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -177,8 +180,8 @@ input {
 
 /* ukuran video */
 .video-konten iframe {
-  width: 1200px;
-  height: 330px;
+  width: 1355px;
+  height: 400px;
   border-radius: 20px;
 }
 
@@ -191,8 +194,8 @@ input {
   display: flex;
   width: 800px;
   height: 30px;
-  margin-top: 415px;
-  margin-left: -51em;
+  margin-top: 485px;
+  margin-left: -58em;
 }
 
 /* ukuran genre 1 */
@@ -205,8 +208,8 @@ input {
   display: flex;
   width: 100px;
   height: 30px;
-  margin-top: 415px;
-  margin-left: -34em;
+  margin-top: 485px;
+  margin-left: -45.5em;
   border-radius: 15px;
   border: 1px solid rgba(232, 232, 232, 0.35);
 }
@@ -221,8 +224,8 @@ input {
   display: flex;
   width: 100px;
   height: 30px;
-  margin-top: 415px;
-  margin-left: -27em;
+  margin-top: 485px;
+  margin-left: -38em;
   border-radius: 15px;
   border: 1px solid rgba(232, 232, 232, 0.35);
 
@@ -236,8 +239,8 @@ input {
   display: flex;
   width: 860px;
   height: 93px;
-  margin-top: 465px;
-  margin-left: -58.6em;
+  margin-top: 520px;
+  margin-left: -66.5em;
 }
 
 /* garis 1 */
@@ -246,7 +249,7 @@ input {
   width: 860px;
   height: 1px;
   margin-top: 75px;
-  margin-left: -73.2em;
+  margin-left: -83em;
 
 }
 
@@ -257,7 +260,7 @@ input {
   display: flex;
   position: absolute;
   margin-top: 15px;
-  margin-left: -58.6em;
+  margin-left: -66.5em;
 }
 
 /* nama director */
@@ -267,7 +270,7 @@ input {
   display: flex;
   position: absolute;
   margin-top: 15px;
-  margin-left: -53.8em;
+  margin-left: -61.5em;
 }
 
 /* garis2 */
@@ -276,7 +279,7 @@ input {
   width: 860px;
   height: 2px;
   margin-top: 60px;
-  margin-left: -73.2em;
+  margin-left: -83em;
 
 }
 
@@ -287,7 +290,7 @@ input {
   display: flex;
   position: absolute;
   margin-top: 15px;
-  margin-left: -58.5em;
+  margin-left: -66.5em;
 }
 
 /* nama penulis */
@@ -297,7 +300,7 @@ input {
   display: flex;
   position: absolute;
   margin-top: 15px;
-  margin-left: -54.2em;
+  margin-left: -62em;
 }
 
 /* garis3 */
@@ -306,7 +309,7 @@ input {
   width: 860px;
   height: 2px;
   margin-top: 65px;
-  margin-left: -73.1em;
+  margin-left: -83em;
 
 }
 
@@ -317,7 +320,7 @@ input {
   display: flex;
   position: absolute;
   margin-top: 15px;
-  margin-left: -58.5em;
+  margin-left: -66.5em;
 }
 
 /* pemerannya */
@@ -327,7 +330,7 @@ input {
   display: flex;
   width: 500px;
   margin-top: 15px;
-  margin-left: -55.2em;
+  margin-left: -63em;
 }
 
 .judul-video .rate {
@@ -339,11 +342,86 @@ input {
   justify-content: center;
   width: 253px;
   height: 55px;
-  margin-top: 70px;
-  margin-left: -58.6em;
+  margin-top: 80px;
+  margin-left: -66.5em;
   border-radius: 10px;
 }
 
+.judul-video .award{
+  font-size: 20px;
+  color: #FFF;
+  background-color:rgba(18, 18, 18, 0.80);
+  padding-top: 14px;
+  padding-left: 35px;
+  width: 580px;
+  height: 55px;
+  margin-top: -2.9em;
+  margin-left: -53.8em;
+  border-radius: 10px;
+}
+
+.judul-video .Cast{
+  font-size: 25px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  padding: 10px;
+  margin-left: -54em;
+  margin-top: 55px;
+}
+
+.judul-video .top1{
+  width: 150px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2em;
+  margin-left: -83em;
+}
+
+.judul-video .top2{
+  width: 150px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+.judul-video .top3{
+  width: 150px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+.judul-video .topnm1{
+  color: #FFF;
+  font-size: 18px;
+  width: 110px;
+  margin-left: -72.4em;
+  margin-top: 1em;
+}
+
+.judul-video .topnm2{
+  color: #FFF;
+  font-size: 18px;
+  width: 160px;
+  margin-left: -62.4em;
+  margin-top: -25px;
+}
+
+.judul-video .topnm3{
+  color: #FFF;
+  font-size: 18px;
+  width: 140px;
+  margin-left: -49.8em;
+  margin-top: -25px;
+}
 
 /* penemapatang rating */
 .rating {
@@ -359,8 +437,8 @@ input {
   align-items: center;
   width: 30px;
   height: 30px;
-  margin-top: 410px;
-  margin-left: -14em;
+  margin-top: 480px;
+  margin-left: -15em;
   font-size: 28px;
 }
 
@@ -371,8 +449,8 @@ input {
   align-items: center;
   width: 30px;
   height: 30px;
-  margin-top: 410px;
-  margin-left: -10em;
+  margin-top: 480px;
+  margin-left: -11em;
   font-size: 28px;
 }
 
@@ -383,8 +461,8 @@ input {
   align-items: center;
   width: 30px;
   height: 30px;
-  margin-top: 410px;
-  margin-left: -6em;
+  margin-top: 480px;
+  margin-left: -7em;
   font-size: 28px;
 }
 
@@ -395,41 +473,83 @@ input {
   align-items: center;
   width: 30px;
   height: 30px;
-  margin-top: 410px;
-  margin-left: -2em;
+  margin-top: 480px;
+  margin-left: -3em;
   font-size: 28px;
 }
 
 
 .rating .tiket {
-  background: rgba(61, 210, 204, 0.70);
+  position: absolute;
+  background: rgba(18, 18, 18, 0.80);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 260px;
-  height: 55px;
+  width: 330px;
+  height: 80px;
   border-radius: 10px;
-  margin-left: -12em;
-  margin-top: 25em;
+  margin-left: -18em;
+  margin-top: 27em;
 }
 
 .rating .watchopsion {
-  background-color: rgba(61, 210, 204, 0.70);
+  position: absolute;
+  background-color: rgba(18, 18, 18, 0.80);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 260px;
-  height: 55px;
+  width: 330px;
+  height: 80px;
   border-radius: 10px;
-  margin-left: -13em;
-  margin-top: 556.5px;
+  margin-left: -18em;
+  margin-top: 31.3em;
 
 }
 
+.rating .tiket:hover{
+  background-color: rgba(61, 210, 204, 0.80);
+  transition: all .3s ease-in-out;
+}
+
+.rating .watchopsion:hover{
+  background-color: rgba(61, 210, 204, 0.80);
+  transition: all .3s ease-in-out;
+}
 
 .tiket1,
 .tiket2 {
   color: #FFF;
+}
+
+.rating .film1 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  margin-left: -11em;
+  margin-top: 47em;
+}
+
+.rating .film2 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  margin-left: -23em;
+  margin-top: 47em;
+}
+
+.rating .film3 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 285px;
+  border-radius: 20px;
+  margin-left: -23em;
+  margin-top: 47em;
 }
