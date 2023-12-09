@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="/src/assets/css/style.css">
   <link rel="stylesheet" href="/src/assets/css/homepage.css">
   <link rel="stylesheet" href="/src/assets/css/sidebar.css">
+  <link rel="stylesheet" href="/src/assets/css/sidekanan.css">
   <link rel="stylesheet" href="/src/assets/css/mobile.css">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- fonts google -->
@@ -19,84 +19,7 @@
   <!-- icon -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="shortcut icon" href="/img/svg/moviebes.svg" type="image/x-icon">
-  <title>Movies</title>
-  <style>
-    /* Pilihan genre di sisi kanan */
-    .genre-selection {
-      height: 100%;
-      background-color: #f8f9fa;
-      padding: 20px;
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 250px;
-      overflow-y: auto;
-    }
-
-    /* Atur tinggi agar genre selection sama tingginya dengan halaman */
-    .genre-selection,
-    .side-nav {
-      height: 100%;
-    }
-
-    @media (max-width: 767px) {
-      .side-nav .hamburger-btn-2 {
-        display: block;
-        position: absolute;
-        top: 25px;
-        left: 20px;
-      }
-
-      .side-nav {
-        left: -250px;
-        right: 0;
-        z-index: 3;
-      }
-
-      .side-nav .mobile-profile {
-        display: flex !important;
-      }
-
-      .mobile-navbar .placeholder-white::placeholder {
-        color: white !important;
-      }
-
-      .mobile-navbar .logo {
-        display: block;
-      }
-
-      .logo {
-        display: none;
-      }
-
-      .main-content {
-        margin-top: 4rem;
-        margin-left: 10px;
-      }
-
-      .main-content .mobile-screen .see-all {
-        position: relative;
-        left: 3rem;
-        top: .4rem;
-      }
-
-      .main-content .full-screen {
-        display: none;
-      }
-
-      .main-content .mobile-screen {
-        display: block;
-      }
-
-      .main-content .search-bar {
-        display: none;
-      }
-
-      .genre-selection {
-        display: none;
-      }
-    }
-  </style>
+  <title>Home</title>
 </head>
 
 <body>
@@ -192,7 +115,9 @@
           <img src="/img/movies/house_of_dragon.png" alt="house of dragon" width="200px" height="315px">
         </div>
         <div class="col-3 mt-2">
-          <img src="/img/movies/top_gun.png" alt="top gun" width="200px" height="315px">
+          <a href="/src/views/detail/topGun.html">
+            <img src="/img/movies/top_gun.png" alt="top gun" width="200px" height="315px">
+          </a>
         </div>
         <div class="col-3 mt-2">
           <img src="/img/movies/nope.png" alt="nope" width="200px" height="315px">
@@ -215,7 +140,9 @@
           <img src="/img/movies/barbarian.png" alt="barbarian" width="200px" height="315px">
         </div>
         <div class="col-3 mt-2">
-          <img src="/img/movies/black_adam.png" alt="black adam" width="200px" height="315px">
+          <a href="/src/views/detail/blackAdam.html">
+            <img src="/img/movies/black_adam.png" alt="black adam" width="200px" height="315px">
+          </a>
         </div>
         <div class="col-3 mt-2">
           <img src="/img/movies/al_kamen.png" alt="al kamen" width="200px" height="315px">
@@ -266,7 +193,7 @@
     <!-- jika sedang dalam keadaan mobile -->
     <div class="mobile-screen" style="margin-top: -3rem;">
       <div class="d-flex justify-content-between w-75 mt-4">
-        <h2 class="text-white mb-3">Trending</h2>
+        <h5 class="text-white mb-3">Trending</h5>
         <p class="text-white-50 see-all">See All</p>
       </div>
       <div id="trending" class="carousel carousel-light slide">
@@ -276,7 +203,9 @@
               height="315px">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="/img/movies/top_gun.png" class="d-block m-auto" alt="top gun" width="200px" height="315px">
+            <a href="/src/views/detail/topGun.html">
+              <img src="/img/movies/top_gun.png" class="d-block m-auto" alt="top gun" width="200px" height="315px">
+            </a>
           </div>
           <div class="carousel-item">
             <img src="/img/movies/nope.png" class="d-block m-auto" alt="nope" width="200px" height="315px">
@@ -296,10 +225,10 @@
       </div>
 
       <div class="d-flex justify-content-between w-75 mt-4">
-        <h2 class="text-white mb-3">Upcoming</h2>
+        <h5 class="text-white mb-3">Upcoming</h5>
         <p class="text-white-50 see-all">See All</p>
       </div>
-      <div id="upcoming" class="carousel carousel-light slide">
+      <div id="mobileUpcoming" class="carousel carousel-light slide">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <img src="/img/movies/vessper.png" class="d-block m-auto" alt="vesper" width="200px" height="315px">
@@ -308,27 +237,30 @@
             <img src="/img/movies/barbarian.png" class="d-block m-auto" alt="barbarian" width="200px" height="315px">
           </div>
           <div class="carousel-item">
-            <img src="/img/movies/black_adam.png" class="d-block m-auto" alt="black adam" width="200px" height="315px">
+            <a href="/src/views/detail/topGun.html">
+              <img src="/img/movies/black_adam.png" class="d-block m-auto" alt="black adam" width="200px"
+                height="315px">
+            </a>
           </div>
           <div class="carousel-item">
             <img src="/img/movies/al_kamen.png" class="d-block m-auto" alt="al kamen" width="200px" height="315px">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#upcoming" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#mobileUpcoming" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#upcoming" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#mobileUpcoming" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
 
       <div class="d-flex justify-content-between w-75 mt-4">
-        <h2 class="text-white mb-3">TV Series</h2>
+        <h5 class="text-white mb-3">TV Series</h5>
         <p class="text-white-50 see-all">See All</p>
       </div>
-      <div id="tvseries" class="carousel carousel-light slide">
+      <div id="mobileTvSeries" class="carousel carousel-light slide">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <img src="/img/movies/rings_of_power.png" class="d-block m-auto" alt="rings of fire" width="200px"
@@ -346,18 +278,18 @@
               height="315px">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#tvseries" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#mobileTvSeries" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#tvseries" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#mobileTvSeries" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
 
       <div class="d-flex justify-content-between w-75 mt-4">
-        <h2 class="text-white mb-3">Popular Movies</h2>
+        <h5 class="text-white mb-3">Popular Movies</h5>
         <p class="text-white-50 see-all">See All</p>
       </div>
       <div id="popular" class="carousel carousel-light slide">
@@ -391,23 +323,76 @@
   </div>
 
   <!-- Pilihan Genre di Sisi Kanan -->
-  <div class="genre-selection" style="margin-top: 7rem;">
-    <h4>Pilih Genre</h4>
-    <ul class="list-group">
-      <li class="list-group-item">Aksi</li>
-      <li class="list-group-item">Petualangan</li>
-      <li class="list-group-item">Drama</li>
-      <!-- Tambahkan genre lainnya sesuai kebutuhan -->
-    </ul>
-  </div>
+  <div class="genre-selection" style="margin-top: 4.5rem;">
+    <div class="d-flex justify-content-between p-2" style="margin-left: -1.5rem;">
+      <h4 class="text-white">Categories</h4>
+      <p class="text-white-50 mt-1" style="font-size: 14px;">Uncheck all</p>
+    </div>
+    <div class="check-box">
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Action</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Adventure</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Animated</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Comedy</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Crime</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Fantasy</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    function toggleSidebar() {
-      const sideNav = document.querySelector('.side-nav');
-      sideNav.style.left = sideNav.style.left === '0px' ? '-250px' : '0px';
-    }
-  </script>
+    <div class="d-flex justify-content-between p-2 mt-3" style="margin-left: -1.5rem;">
+      <h4 class="text-white">Services</h4>
+      <p class="text-white-50 mt-2" style="font-size: 14px;">Uncheck all</p>
+    </div>
+    <div class="check-box">
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Netflix</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Prime Video</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Disney+</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">HBO Max</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        function toggleSidebar() {
+          const sideNav = document.querySelector('.side-nav');
+          sideNav.style.left = sideNav.style.left === '0px' ? '-250px' : '0px';
+        }
+      </script>
 </body>
 
 </html>
