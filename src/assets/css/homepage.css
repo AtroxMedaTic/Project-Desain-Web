@@ -44,3 +44,9 @@
 .main-content .placeholder-white::placeholder {
   color: white !important;
 }
+
+.main-content .full-screen .button-nav-item {
+  position: relative;
+  top: -3.5rem;
+  left: -2rem;
+}

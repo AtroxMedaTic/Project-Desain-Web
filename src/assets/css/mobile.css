@@ -1,0 +1,68 @@
+@media (max-width: 767px) {
+
+  /* login & sign up */
+  .full-image,
+  .movibes-logo {
+    display: none;
+  }
+
+  .title-create {
+    font-size: 1.5rem !important;
+  }
+
+  .side-nav .hamburger-btn-2 {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+  }
+
+  .side-nav {
+    left: -250px;
+    right: 0;
+    z-index: 3;
+  }
+
+  .side-nav .mobile-profile {
+    display: flex !important;
+  }
+
+  .mobile-navbar .placeholder-white::placeholder {
+    color: white !important;
+  }
+
+  .mobile-navbar .logo {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .main-content {
+    margin-top: 4rem;
+    margin-left: 10px;
+  }
+
+  .main-content .mobile-screen .see-all {
+    position: relative;
+    left: 3rem;
+    top: .4rem;
+  }
+
+  .main-content .full-screen {
+    display: none;
+  }
+
+  .main-content .mobile-screen {
+    display: block;
+  }
+
+  .main-content .search-bar {
+    display: none;
+  }
+
+  .genre-selection {
+    display: none;
+  }
+}
