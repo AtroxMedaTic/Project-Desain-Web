@@ -62,7 +62,27 @@
     display: none;
   }
 
-  .genre-selection {
+  .genre-selection,
+  .genre-selection-detail {
     display: none;
+  }
+
+  .trailer iframe {
+    width: 100%;
+    height: 150px !important;
+  }
+
+  .main-content .full-screen-detail {
+    display: inline;
+    width: 100%;
+  }
+
+  .main-content .full-screen-detail .badges {
+    position: absolute;
+    margin-top: 3rem;
+  }
+
+  .main-content .full-screen-detail .sinopsis {
+    margin-top: 3rem !important;
   }
 }

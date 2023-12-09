@@ -1,9 +1,9 @@
 .genre-selection {
   height: 100%;
   padding: 20px;
-  position: fixed;
-  top: 0;
-  right: 0;
+  position: absolute;
+  top: 100px;
+  right: 0px;
   width: 250px;
   overflow-y: auto;
 }
