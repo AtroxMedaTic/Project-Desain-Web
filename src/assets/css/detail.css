@@ -372,6 +372,56 @@ input {
   margin-top: 55px;
 }
 
+.judul-video .top1{
+  width: 150px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2em;
+  margin-left: -83em;
+}
+
+.judul-video .top2{
+  width: 150px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+.judul-video .top3{
+  width: 150px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+.judul-video .topnm1{
+  color: #FFF;
+  font-size: 18px;
+  width: 110px;
+  margin-left: -72.4em;
+  margin-top: 1em;
+}
+
+.judul-video .topnm2{
+  color: #FFF;
+  font-size: 18px;
+  width: 160px;
+  margin-left: -62.4em;
+  margin-top: -25px;
+}
+
+.judul-video .topnm3{
+  color: #FFF;
+  font-size: 18px;
+  width: 140px;
+  margin-left: -49.8em;
+  margin-top: -25px;
+}
 
 /* penemapatang rating */
 .rating {
@@ -430,6 +480,7 @@ input {
 
 
 .rating .tiket {
+  position: absolute;
   background: rgba(18, 18, 18, 0.80);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   font-size: 20px;
@@ -444,6 +495,7 @@ input {
 }
 
 .rating .watchopsion {
+  position: absolute;
   background-color: rgba(18, 18, 18, 0.80);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   font-size: 20px;
@@ -468,9 +520,36 @@ input {
   transition: all .3s ease-in-out;
 }
 
-
-
 .tiket1,
 .tiket2 {
   color: #FFF;
+}
+
+.rating .film1 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  margin-left: -11em;
+  margin-top: 47em;
+}
+
+.rating .film2 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  margin-left: -23em;
+  margin-top: 47em;
+}
+
+.rating .film3 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 285px;
+  border-radius: 20px;
+  margin-left: -23em;
+  margin-top: 47em;
 }
