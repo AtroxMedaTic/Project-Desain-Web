@@ -28,6 +28,7 @@
 }
 
 .side-nav li a {
+  width: 100%;
   text-decoration: none;
   color: #fff;
   font-size: 16pt;
