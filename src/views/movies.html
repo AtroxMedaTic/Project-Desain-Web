@@ -57,7 +57,7 @@
           </a>
         </li>
         <li class="list-group-item">
-          <a href="/src/views/movies.html" class="d-flex">
+          <a href="#movies" class="d-flex active">
             <i class="ri-movie-line mx-2"></i>
             <p>Movies</p>
           </a>
@@ -106,7 +106,7 @@
     <!-- jika screen sedang full -->
     <div class="full-screen mt-4">
       <div class="d-flex justify-content-between w-75">
-        <h2 class="text-white mb-3">Trending</h2>
+        <h2 class="text-white mb-3" id="movies">Movies</h2>
         <p class="text-white-50 see-all">See All</p>
       </div>
       <div class="row row-cols-1 row-cols-lg-4 row-cols-xs-2 w-75 d-flex mx-2">
@@ -193,7 +193,7 @@
     <!-- jika sedang dalam keadaan mobile -->
     <div class="mobile-screen" style="margin-top: -3rem;">
       <div class="d-flex justify-content-between w-75 mt-4">
-        <h5 class="text-white mb-3">Trending</h5>
+        <h5 class="text-white mb-3">Movies</h5>
         <p class="text-white-50 see-all">See All</p>
       </div>
       <div id="trending" class="carousel carousel-light slide">
@@ -386,13 +386,8 @@
         <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
       </div>
       <div class="w-100 border-bottom-side"></div>
+      <script src="/src/assets/js/script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-      <script>
-        function toggleSidebar() {
-          const sideNav = document.querySelector('.side-nav');
-          sideNav.style.left = sideNav.style.left === '0px' ? '-250px' : '0px';
-        }
-      </script>
 </body>
 
 </html>

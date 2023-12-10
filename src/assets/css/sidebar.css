@@ -3,7 +3,7 @@
   display: block;
   height: 100%;
   background-color: rgba(232, 232, 232, 0.10);
-  padding: 20px;
+  padding: 20px 0px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -24,22 +24,21 @@
 .side-nav ul {
   list-style: none;
   margin-top: 10rem;
+  margin-left: 1rem;
 }
 
 .side-nav li a {
   text-decoration: none;
-  color: #3DD2CC;
+  color: #fff;
   font-size: 16pt;
   font-weight: bold;
   margin-top: 1rem;
 }
 
-.active-link {
-  display: block;
-  position: absolute;
-  background-color: rgba(61, 210, 204, 0.40);
-  width: 240px;
-  margin-left: -45px;
-  height: 50px;
-  bottom: 5px;
+.active {
+  color: #3DD2CC !important;
+}
+
+.side-nav ul li a:hover {
+  color: #3DD2CC;
 }
