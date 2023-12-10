@@ -51,13 +51,13 @@
       </div>
       <ul>
         <li class="list-group-item">
-          <a href="#banner" class="d-flex active">
+          <a href="/src/views/homepage.html" class="d-flex">
             <i class="ri-home-line mx-2"></i>
             <p>Home</p>
           </a>
         </li>
         <li class="list-group-item">
-          <a href="/src/views/movies.html" class="d-flex">
+          <a href="#movies" class="d-flex active">
             <i class="ri-movie-line mx-2"></i>
             <p>Movies</p>
           </a>
@@ -105,27 +105,8 @@
 
     <!-- jika screen sedang full -->
     <div class="full-screen mt-4">
-      <div class="banner mx-2 w-75" id="banner">
-        <a href="/src/views/detail/moonfall.html">
-          <img src="/img/movies/moonfall.png" alt="banner" width="100%" height="auto">
-        </a>
-        <div class="button-nav d-flex justify-content-end">
-          <a href="/src/views/detail/moonfall.html">
-            <i class="btn btn-outline-light ri-play-line button-nav-item mx-5"
-              style="font-size: 15pt;backdrop-filter: blur(2.5px);">
-              <span class="text-grey fw-bold">Play</span>
-            </i>
-          </a>
-          <a href="/src/views/detail/moonfall.html">
-            <i class="btn btn-outline-light ri-information-line button-nav-item"
-              style="font-size: 15pt;backdrop-filter: blur(2.5px);">
-              <span class="text-grey fw-bold">More Info</span>
-            </i>
-          </a>
-        </div>
-      </div>
       <div class="d-flex justify-content-between w-75">
-        <h2 class="text-white mb-3">Trending</h2>
+        <h2 class="text-white mb-3" id="movies">Movies</h2>
         <p class="text-white-50 see-all">See All</p>
       </div>
       <div class="row row-cols-1 row-cols-lg-4 row-cols-xs-2 w-75 d-flex mx-2">
@@ -212,7 +193,7 @@
     <!-- jika sedang dalam keadaan mobile -->
     <div class="mobile-screen" style="margin-top: -3rem;">
       <div class="d-flex justify-content-between w-75 mt-4">
-        <h5 class="text-white mb-3">Trending</h5>
+        <h5 class="text-white mb-3">Movies</h5>
         <p class="text-white-50 see-all">See All</p>
       </div>
       <div id="trending" class="carousel carousel-light slide">

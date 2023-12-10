@@ -6,7 +6,7 @@ function registerUser() {
 
       // Validasi formulir
       if (!username || !email || !password) {
-        showToast('Create Failed. Please fill all coloumn', 'text-bg-danger');
+        showToast('Registration Failed. Please fill all coloumn', 'danger');
         return;
       }
 
@@ -26,7 +26,7 @@ function registerUser() {
       // Simpan data ke dalam localStorage
       localStorage.setItem('users', JSON.stringify(existingUsers));
 
-      showToast('Create Successful. Data saved.', 'text-bg-success');
+      showToast('Registration Successful. Data saved.', 'success');
       setTimeout(() => {
         window.location.assign('/index.html');
       }, 1000);
@@ -35,13 +35,9 @@ function registerUser() {
 function showToast(message, toastColor) {
   const toastContainer = document.getElementById('toastContainer');
   toastContainer.innerHTML = `
-    <div class="toast align-items-center ${toastColor} rounded-2 p-2 w-auto" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          ${message}
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
+    <div class="alert alert-${toastColor} alert-dismissible" role="alert">
+      <div>${message}</div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
   `;
 
@@ -52,13 +48,9 @@ function showToast(message, toastColor) {
 function googleLogin() {
   const toastContainer = document.getElementById('toastContainer');
   toastContainer.innerHTML = `
-    <div class="toast align-items-center text-bg-danger rounded-2 p-2 w-auto" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          Feature is not available yet.
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
+   <div class="alert alert-danger alert-dismissible" role="alert">
+      <div>Featured is not available yet</div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
   `;
 

@@ -3,7 +3,7 @@
     const password = document.getElementById('password').value;
 
     if (!email || !password) {
-      showToast('Gagal login. Harap isi semua kolom.', 'danger');
+      showToast('Login failed. Please fill all required fields.', 'danger');
       return;
     }
 
@@ -18,9 +18,9 @@
       setTimeout(() => {
         window.location.assign('/src/views/homepage.html');
       }, 500);
-      showToast('Login berhasil. Selamat datang, ' + user.username + '!', 'success');
+      showToast('Login successfull. Welcome, ' + user.username + '!', 'success');
     } else {
-      showToast('Gagal login. Email atau password tidak valid.', 'danger');
+      showToast('Login Failed. Email or Password is incorrect.', 'danger');
     }
   }
 

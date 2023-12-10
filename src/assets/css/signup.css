@@ -16,16 +16,3 @@
 .btn-login:hover {
   color: #3DD2CC !important;
 }
-
-@media (max-width: 767px) {
-
-  /* Sembunyikan sisi kiri saat lebar layar kurang dari atau sama dengan 767px */
-  .full-image,
-  .movibes-logo {
-    display: none;
-  }
-
-  .title-create {
-    font-size: 1.5rem !important;
-  }
-}
