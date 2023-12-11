@@ -12,5 +12,17 @@ function toggleSidebar() {
   sideNav.style.left = sideNav.style.left === '0px' ? '-250px' : '0px';
 }
 
+function search(){
+  const value = document.querySelector('input').value;
+  const iconSearch = document.querySelector('.search-icon');
+
+  if(value !== ''){
+    iconSearch.style.display = 'none';
+  } else {
+    iconSearch.style.display = 'block';
+  }
+
+}
+
 active();
 toggleSidebar();

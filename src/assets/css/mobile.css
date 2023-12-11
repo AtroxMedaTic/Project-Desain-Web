@@ -80,9 +80,22 @@
   .main-content .full-screen-detail .badges {
     position: absolute;
     margin-top: 3rem;
+    margin-left: -1rem;
   }
 
   .main-content .full-screen-detail .sinopsis {
     margin-top: 3rem !important;
+  }
+
+  .pemain {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 487px) {
+  .main-content .full-screen-detail .badges {
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: -1rem;
   }
 }
