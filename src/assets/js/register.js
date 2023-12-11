@@ -1,36 +1,34 @@
 function registerUser() {
-      // Ambil nilai dari formulir
-      const username = document.getElementById('username').value;
-      const email = document.getElementById('email').value;
-      const password = document.getElementById('password').value;
+  // Ambil nilai dari formulir
+  const username = document.getElementById('username').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
 
-      // Validasi formulir
-      if (!username || !email || !password) {
-        showToast('Registration Failed. Please fill all coloumn', 'danger');
-        return;
-      }
+  // Validasi formulir
+  if (!username || !email || !password) {
+    showToast('Registration Failed. Please fill all coloumn', 'danger');
+    return;
+  }
 
-      // Data pengguna baru
-      let newUser = {
-        username: username,
-        email: email,
-        password: password
-      };
+  // Data pengguna baru
+  let newUser = {
+    username: username,
+    email: email,
+    password: password
+  };
 
-      // Ambil data di localStorage
-      let existingUsers = JSON.parse(localStorage.getItem('users')) || [];
-      console.log(existingUsers);
+  // Ambil data di localStorage
+  let existingUsers = JSON.parse(localStorage.getItem('users')) || [];
 
-      existingUsers.push(newUser);
+  existingUsers.push(newUser);
 
-      // Simpan data ke dalam localStorage
-      localStorage.setItem('users', JSON.stringify(existingUsers));
-
-      showToast('Registration Successful. Data saved.', 'success');
-      setTimeout(() => {
-        window.location.assign('/index.html');
-      }, 1000);
-    }
+  // Simpan data ke dalam localStorage
+  localStorage.setItem('users', JSON.stringify(existingUsers));
+  setTimeout(() => {
+  window.location.assign('../index.html');
+  }, 500);
+  showToast('Registration Successful. Data saved.', 'success');
+}
 
 function showToast(message, toastColor) {
   const toastContainer = document.getElementById('toastContainer');
