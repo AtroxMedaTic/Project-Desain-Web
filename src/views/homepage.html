@@ -411,37 +411,7 @@
       <div class="w-100 border-bottom-side"></div>
       <script src="/src/assets/js/script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-      <script>
-        function uncheckAllCheckboxes(element) {
-          var checkboxes = element.querySelectorAll('input[type="checkbox"]');
-          checkboxes.forEach(function (checkbox) {
-            checkbox.checked = false;
-          });
-        }
-    
-        document.getElementById('uncheckCategories').addEventListener('click', function (event) {
-          event.preventDefault();
-          var categoriesSection = document.querySelector('.genre-selection .check-box:nth-child(2)');
-          uncheckAllCheckboxes(categoriesSection);
-        });
-    
-        document.getElementById('uncheckServices').addEventListener('click', function (event) {
-          event.preventDefault();
-          var servicesSection = document.querySelector('.genre-selection .check-box:nth-child(4)');
-          uncheckAllCheckboxes(servicesSection);
-        });
-    
-        function search() {
-          const value = document.querySelector('#searchInput').value; // Sesuaikan dengan ID elemen input yang benar
-          const iconSearch = document.querySelector('.search-icon');
-    
-          if (value !== '') {
-            iconSearch.style.display = 'none';
-          } else {
-            iconSearch.style.display = 'block';
-          }
-        }
-      </script>
+      
 </body>
 
 </html>
