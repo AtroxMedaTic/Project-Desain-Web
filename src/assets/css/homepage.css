@@ -50,3 +50,8 @@
   top: -3.5rem;
   left: -2rem;
 }
+
+#uncheckCategories, #uncheckServices {
+  color: white;
+  text-decoration: none;
+}
