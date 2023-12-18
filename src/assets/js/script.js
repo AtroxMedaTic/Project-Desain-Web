@@ -31,18 +31,19 @@ document.getElementById('uncheckServices').addEventListener('click', function (e
   uncheckAllCheckboxes(servicesSection);
 });
 
-function search() {
-  const value = document.querySelector('#searchInput').value; // Sesuaikan dengan ID elemen input yang benar
+function search(){
+  const value = document.querySelector('input').value;
   const iconSearch = document.querySelector('.search-icon');
 
-  if (value !== '') {
+  if(value !== ''){
     iconSearch.style.display = 'none';
   } else {
     iconSearch.style.display = 'block';
   }
+
 }
 
 active();
 toggleSidebar();
 uncheckAllCheckboxes();
-search();
+
