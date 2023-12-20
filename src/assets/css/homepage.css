@@ -1,0 +1,57 @@
+/* Konten utama di tengah */
+
+.mobile-navbar .logo {
+  display: none;
+}
+
+.mobile-navbar .hamburger-btn {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #3DD2CC;
+}
+
+.main-content {
+  margin-left: 260px;
+  /* Sesuaikan dengan lebar navigasi */
+  padding: 20px;
+}
+
+.main-content .full-screen .see-all {
+  position: relative;
+  left: -1.5rem;
+  top: 1rem;
+}
+
+.main-content .search-bar .search-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+  color: white;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.main-content .mobile-screen {
+  display: none;
+}
+
+.main-content .placeholder-white::placeholder {
+  color: white !important;
+}
+
+.main-content .full-screen .button-nav-item {
+  position: relative;
+  top: -3.5rem;
+  left: -2rem;
+}
+
+#uncheckCategories, #uncheckServices {
+  color: white;
+  text-decoration: none;
+}

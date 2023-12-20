@@ -1,8 +1,14 @@
-*,
+html,
 body {
+  background-color: #1E1E1E !important;
   font-family: 'Poppins', sans-serif;
+  height: 100%;
   padding: 0;
   margin: 0;
-  text-decoration: none;
-  overflow-x: hidden;
+}
+
+/* Atur tinggi agar side kanan sama tingginya dengan halaman */
+.genre-selection,
+.side-nav {
+  height: 100%;
 }

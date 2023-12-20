@@ -3,17 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moviebes</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/src/assets/css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/src/assets/css/style.css">
+  <link rel="stylesheet" href="/src/assets/css/homepage.css">
   <link rel="stylesheet" href="/src/assets/css/sidebar.css">
-  <link rel="stylesheet" href="/src/assets/css/topbar.css">
   <link rel="stylesheet" href="/src/assets/css/sidekanan.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/src/assets/css/mobile.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- fonts google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,263 +18,400 @@
 
   <!-- icon -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-
+  <link rel="shortcut icon" href="/img/svg/moviebes.svg" type="image/x-icon">
+  <title>Home</title>
 </head>
 
 <body>
-  <div class="bg-dark">
-    <div class="row text-white fw-bold">
-      <div class="col">
-        <div class="sidebar">
-          <div class="header">
-            <div class="list-item">
-              <a href="#">
-                <img src="/img/svg/moviebes.svg" alt="" class="logo">
-              </a>
-            </div>
-          </div>
 
-          <div class="main">
-            <ul class="navbar">
-              <li class="sidebar-menu">
-                <a href="#">
-                  <i class="ri-home-line"></i>
-                  <span class="deskripsi">Home</span>
-                </a>
-              </li>
-              <li class="sidebar-menu">
-                <a href="#">
-                  <i class="ri-movie-line"></i>
-                  <span class="deskripsi">Movies</span>
-                </a>
-              </li>
-              <li class="sidebar-menu">
-                <a href="#tvseries">
-                  <i class="ri-tv-2-line"></i>
-                  <span class="deskripsi">TV Series</span>
-                </a>
-              </li>
-              <li class="sidebar-menu">
-                <a href="#upcoming">
-                  <i class="ri-calendar-2-line"></i>
-                  <span class="deskripsi">Upcoming</span>
-                </a>
-              </li>
-              <li class="sidebar-menu" style="margin-top: 12rem;">
-                <a href="/index.html">
-                  <i class="ri-logout-box-r-line"></i>
-                  <span class="deskripsi">Log Out</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <!-- Navigasi di Sisi Kiri -->
+  <div class="container">
+    <!-- Tombol Hamburger -->
+    <div class="mobile-navbar row m-auto">
+      <div class="col-2">
+        <button class="btn btn-primary bg-dark hamburger-btn" onclick="toggleSidebar()">☰</button>
       </div>
-      <div class="topbar">
-        <div class="searchbar">
-          <i class="ri-search-line"></i>
-          <input type="text" placeholder="Search For Movies, TV Shows ...">
-        </div>
-        <div class="right-side">
-          <div class="notifikasi">
-            <i class="ri-notification-line"></i>
-          </div>
-          <div class="profil">
-            <img src="/img/cloud-clouds.gif" alt="Profil Pengguna">
-          </div>
-        </div>
+      <div class="col-10 mt-3 logo">
+        <a href="#" class="logo d-flex justify-content-center">
+          <img src="/img/svg/moviebes.svg" alt="" class="logo">
+        </a>
       </div>
-      <div class="col-9 text-center">
-        <!--  BAGIAN FIRJA -->
-        <!-- ini semua masih blm terpanggi, sepertinya karena css nya di utak atik -->
-        <!-- trus juga klo mau utak atik css nya di file main.css aja ya ja -->
-        <div class="main-konten">
-          <section class="video-konten">
-            <div class="detail-moonfall">
-              <div class="detail-play">
-                <a href="/src/views/detail/moonfall.html">
-                  <i>
-                    <img class="icon-play" src="/img/logo/play.png" width="35px" height="35px">
-                  </i>
-                  <span class="play" style="color: white; font-size:24px;">Play</span>
-                </a>
-              </div>
-
-              <div class="detail-moreinfo">
-                <a href="#">
-                  <i>
-                    <img class="icon-moreinfo" src="/img/logo/more_info.png" width="25px" height="25px">
-                  </i>
-                  <span class="moreinfo" style="color: white; font-size:24px; overflow: hidden">More info</span>
-                </a>
-              </div>
-            </div>
-            
-            <div class="atas-kotakfilm">
-              <h1 class="trending" style="color: white; font-size:24px; overflow: hidden">Trending</h1>
-              <h1 class="seeall" style="color: #666; font-size:15px; overflow: hidden">See all</h1>
-            </div>
-
-            <div class="" style="display: flex">
-              <div class="kotak-film film1">
-                <img src="/img/movies/house_of_dragon.png" width="200px" height="315px">
-              </div>
-
-              <div class="kotak-film film2">
-                <a href="/src/views/detail/topGun.html">
-                  <img src="/img/movies/top_gun.png" width="200px" height="315px">
-                </a>
-              </div>
-
-              <div class="kotak-film film3">
-                <img src="/img/movies/nope.png" width="200px" height="315px">
-              </div>
-
-              <div class="kotak-film film4">
-                <img src="/img/movies/sadnman.png" width="200px" height="315px">
-              </div>
-            </div>
-
-            <h1 class="upcoming" style="color: white; font-size:24px; overflow: hidden">Upcoming</h1>
-            <h1 class="seeall" style="color: #666; font-size:15px; overflow: hidden">See all</h1>
-            <div class="" style="display: flex;">
-              <div class="kotak-film film5">
-                <img src="/img/movies/vessper.png" width="200px" height="315px">
-              </div>
-
-              <div class="kotak-film film6">
-                <img src="/img/movies/barbarian.png" width="200px" height="315px">
-              </div>
-
-              <div class="kotak-film film7">
-                <a href="/src/views/detail/blackAdam.html">
-                  <img src="/img/movies/black_adam.png" width="200px" height="315px">
-                </a>
-              </div>
-
-              <div class="kotak-film film8">
-                <img src="/img/movies/al_kamen.png" width="200px" height="315px">
-              </div>
-            </div>
-
-            <h1 id="tvseries" style="color: white; font-size:24px; overflow: hidden">TV Series</h1>
-            <h1 class="seeall" style="color: #666; font-size:15px; overflow: hidden">See all</h1>
-            <div class="" style="display: flex;">
-              <div class="kotak-film film9">
-                <img src="/img/movies/rings_of_power.png" width="200px" height="315px">
-              </div>
-
-              <div class="kotak-film film10">
-                <img src="/img/movies/she_hulk.png" width="200px" height="315px">
-              </div>
-
-              <div class="kotak-film film11">
-                <img src="/img/movies/stranger_things.png" width="200px" height="315px">
-              </div>
-
-              <div class="kotak-film film12">
-                <img src="/img/movies/moon_knight.png" width="200px" height="315px">
-              </div>
-            </div>
-
-            <h1 id="upcoming" class="popular" style="color: white; font-size:24px; overflow: hidden">Popular Movies on
-              September</h1>
-            <h1 class="seeall" style="color: #666; font-size:15px; overflow: hidden">See all</h1>
-            <div class="" style="display: flex;">
-              <div class="kotak-film film13">
-                <img src="/img/movies/the_gray_men.png" width="200px" height="315px">
-              </div>
-
-              <div class="kotak-film film14">
-                <img src="/img/movies/day_shift.png" width="200px" height="315px">
-              </div>
-
-              <div class="kotak-film film15">
-                <img src="/img/movies/purple_heart.png" width="200px" height="315px">
-              </div>
-
-              <div class="kotak-film film16">
-                <img src="/img/movies/oprhan.png" width="200px" height="315px">
-              </div>
-            </div>
-          </section>
-        </div>
+    </div>
+    <div class="side-nav bg-dark text-white">
+      <button class="btn btn-primary bg-dark hamburger-btn-2" onclick="toggleSidebar()">☰</button>
+      <div class="list-item">
+        <a href="/src/views/homepage.html" class="logo d-flex justify-content-center">
+          <img src="/img/svg/moviebes.svg" alt="" class="logo">
+        </a>
       </div>
-      <div class="col-3 sidekanan">
-        <!-- BAGIAN VALEN -->
-        <!-- untuk valen klo mau main css utak atik di sidebar-left.css aja yah len -->
-        <div class="d-flex justify-content-between title-sidekanan">
-          <a href="#" style="color: #e8e8ee;">
-            <p>Categories</p>
+      <div class="mobile-profile d-flex justify-content-end">
+        <i class="ri-notification-line text-white-50" style="font-size: 30pt"></i>
+        <img src="/img/cloud-clouds.gif" alt="Profil Pengguna" class="rounded-circle mt-2 mx-3" width="40px"
+          height="40px">
+      </div>
+      <ul>
+        <li class="list-group-item">
+          <a href="#banner" class="d-flex active">
+            <i class="ri-home-line mx-2"></i>
+            <p>Home</p>
           </a>
-          <a href="#" style="color: #e8e8ee;">
-            <p>Uncheck All</p>
+        </li>
+        <li class="list-group-item">
+          <a href="/src/views/movies.html" class="d-flex">
+            <i class="ri-movie-line mx-2"></i>
+            <p>Movies</p>
           </a>
-        </div>
-
-        <div class="kluargakanan">
-          <div class="checkbox">
-            <div class="minibox">
-              <p>Action</p>
-            </div>
-            <div class="minibox">
-              <p>Adventure</p>
-            </div>
-            <div class="minibox">
-              <p>Animated</p>
-            </div>
-            <div class="minibox">
-              <p>Comedy</p>
-            </div>
-            <div class="minibox">
-              <p>Crime</p>
-            </div>
-            <div class="minibox">
-              <p>Fantasy</p>
-            </div>
-            <div class="minibox lebih">
-              <p>See more</p>
-            </div>
-          </div>
-
-          <div class="d-flex justify-content-between title-sidekanan">
-            <a href="#" style="color: #e8e8ee;">
-              <p>Services</p>
-            </a>
-            <a href="#" style="color: #e8e8ee;">
-              <p>Uncheck All</p>
-            </a>
-          </div>
-
-          <div class="checkbox">
-            <div class="minibox">
-              <p>Netflix</p>
-            </div>
-            <div class="minibox">
-              <p>Prime Video</p>
-            </div>
-            <div class="minibox">
-              <p>Disney +</p>
-            </div>
-            <div class="minibox">
-              <p>HBO max</p>
-            </div>
-            <div class="minibox">
-              <p>Hulu</p>
-            </div>
-            <div class="minibox">
-              <p>Stars</p>
-            </div>
-            <div class="minibox lebih">
-              <p>See more</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        </li>
+        <li class="list-group-item">
+          <a href="#tvseries" class="d-flex">
+            <i class="ri-tv-2-line mx-2"></i>
+            <p>TV Series</p>
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#upcoming" class="d-flex">
+            <i class="ri-calendar-2-line mx-2"></i>
+            <p>Upcoming</p>
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="/index.html" class="d-flex mt-5">
+            <i class="ri-logout-box-r-line mx-2"></i>
+            <p>Logout</p>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 
-  <script src="/src/assets/js/script.js"></script>
+  <!-- Konten Utama di Tengah -->
+  <div class="main-content">
+    <div class="search-bar">
+      <nav class="navbar">
+        <div class="container-fluid d-flex justify-content-between">
+          <span class="search-icon">
+            <i class="ri-search-line"></i>
+          </span>
+          <input class="form-control w-75 bg-dark text-light placeholder-white rounded-5" type="search"
+            placeholder="     Search" aria-label="Search" id="search" onkeyup="search()">
+          <div class="side-right d-flex justify-content-end">
+            <i class="ri-notification-line text-white-50" style="font-size: 30pt"></i>
+            <img src="/img/cloud-clouds.gif" alt="Profil Pengguna" class="rounded-circle mt-2 mx-3" width="40px"
+              height="40px">
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- jika screen sedang full -->
+    <div class="full-screen mt-4">
+      <div class="banner mx-2 w-75" id="banner">
+        <a href="/src/views/detail/moonfall.html">
+          <img src="/img/movies/moonfall.png" alt="banner" width="100%" height="auto">
+        </a>
+        <div class="button-nav d-flex justify-content-end">
+          <a href="/src/views/detail/moonfall.html">
+            <i class="btn btn-outline-light ri-play-line button-nav-item mx-5"
+              style="font-size: 15pt;backdrop-filter: blur(2.5px);">
+              <span class="text-grey fw-bold">Play</span>
+            </i>
+          </a>
+          <a href="/src/views/detail/moonfall.html">
+            <i class="btn btn-outline-light ri-information-line button-nav-item"
+              style="font-size: 15pt;backdrop-filter: blur(2.5px);">
+              <span class="text-grey fw-bold">More Info</span>
+            </i>
+          </a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between w-75">
+        <h2 class="text-white mb-3">Trending</h2>
+        <p class="text-white-50 see-all">See All</p>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-xs-2 w-75 d-flex mx-2">
+        <!-- Card Film -->
+        <div class="col-3 mt-2">
+          <img src="/img/movies/house_of_dragon.png" alt="house of dragon" width="200px" height="315px">
+        </div>
+        <div class="col-3 mt-2">
+          <a href="/src/views/detail/topGun.html">
+            <img src="/img/movies/top_gun.png" alt="top gun" width="200px" height="315px">
+          </a>
+        </div>
+        <div class="col-3 mt-2">
+          <img src="/img/movies/nope.png" alt="nope" width="200px" height="315px">
+        </div>
+        <div class="col-3 mt-2">
+          <img src="/img/movies/sadnman.png" alt="sandman" width="200px" height="315px">
+        </div>
+      </div>
+
+      <div id="upcoming" class=" d-flex justify-content-between w-75 mt-4">
+        <h2 class="text-white mb-3">Upcoming</h2>
+        <p class="text-white-50 see-all">See All</p>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-xs-2 w-75 d-flex mx-2">
+        <!-- Card Film -->
+        <div class="col-3 mt-2">
+          <img src="/img/movies/vessper.png" alt="vesper" width="200px" height="315px">
+        </div>
+        <div class="col-3 mt-2">
+          <img src="/img/movies/barbarian.png" alt="barbarian" width="200px" height="315px">
+        </div>
+        <div class="col-3 mt-2">
+          <a href="/src/views/detail/blackAdam.html">
+            <img src="/img/movies/black_adam.png" alt="black adam" width="200px" height="315px">
+          </a>
+        </div>
+        <div class="col-3 mt-2">
+          <img src="/img/movies/al_kamen.png" alt="al kamen" width="200px" height="315px">
+        </div>
+      </div>
+
+      <div id="tvseries" class="d-flex justify-content-between w-75 mt-4">
+        <h2 class="text-white mb-3">TV Series</h2>
+        <p class="text-white-50 see-all">See All</p>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-xs-2 w-75 d-flex mx-2">
+        <!-- Card Film -->
+        <div class="col-3 mt-2">
+          <img src="/img/movies/rings_of_power.png" alt="rings of fire" width="200px" height="315px">
+        </div>
+        <div class="col-3 mt-2">
+          <img src="/img/movies/she_hulk.png" alt="she hulk" width="200px" height="315px">
+        </div>
+        <div class="col-3 mt-2">
+          <img src="/img/movies/stranger_things.png" alt="stranger things" width="200px" height="315px">
+        </div>
+        <div class="col-3 mt-2">
+          <img src="/img/movies/moon_knight.png" alt="moon knight" width="200px" height="315px">
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between w-75 mt-4">
+        <h2 class="text-white mb-3">Popular Movies</h2>
+        <p class="text-white-50 see-all">See All</p>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-xs-2 w-75 d-flex mx-2">
+        <!-- Card Film -->
+        <div class="col-3 mt-2">
+          <img src="/img/movies/the_gray_men.png" alt="the gray men" width="200px" height="315px">
+        </div>
+        <div class="col-3 mt-2">
+          <img src="/img/movies/day_shift.png" alt="day shift" width="200px" height="315px">
+        </div>
+        <div class="col-3 mt-2">
+          <img src="/img/movies/purple_heart.png" alt="purple hearth" width="200px" height="315px">
+        </div>
+        <div class="col-3 mt-2">
+          <img src="/img/movies/oprhan.png" alt="orphan" width="200px" height="315px">
+        </div>
+      </div>
+    </div>
+
+    <!-- jika sedang dalam keadaan mobile -->
+    <div class="mobile-screen" style="margin-top: -3rem;">
+      <div class="d-flex justify-content-between w-75 mt-4">
+        <h5 class="text-white mb-3">Trending</h5>
+        <p class="text-white-50 see-all">See All</p>
+      </div>
+      <div id="trending" class="carousel carousel-light slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/img/movies/house_of_dragon.png" alt="house of dragon" class="d-block m-auto" width="200px"
+              height="315px">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="/src/views/detail/topGun.html">
+              <img src="/img/movies/top_gun.png" class="d-block m-auto" alt="top gun" width="200px" height="315px">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/movies/nope.png" class="d-block m-auto" alt="nope" width="200px" height="315px">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/movies/sadnman.png" class="d-block m-auto" alt="sandman" width="200px" height="315px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#trending" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#trending" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="d-flex justify-content-between w-75 mt-4">
+        <h5 class="text-white mb-3">Upcoming</h5>
+        <p class="text-white-50 see-all">See All</p>
+      </div>
+      <div id="mobileUpcoming" class="carousel carousel-light slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/img/movies/vessper.png" class="d-block m-auto" alt="vesper" width="200px" height="315px">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/img/movies/barbarian.png" class="d-block m-auto" alt="barbarian" width="200px" height="315px">
+          </div>
+          <div class="carousel-item">
+            <a href="/src/views/detail/topGun.html">
+              <img src="/img/movies/black_adam.png" class="d-block m-auto" alt="black adam" width="200px"
+                height="315px">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/movies/al_kamen.png" class="d-block m-auto" alt="al kamen" width="200px" height="315px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mobileUpcoming" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mobileUpcoming" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="d-flex justify-content-between w-75 mt-4">
+        <h5 class="text-white mb-3">TV Series</h5>
+        <p class="text-white-50 see-all">See All</p>
+      </div>
+      <div id="mobileTvSeries" class="carousel carousel-light slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/img/movies/rings_of_power.png" class="d-block m-auto" alt="rings of fire" width="200px"
+              height="315px">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/img/movies/she_hulk.png" class="d-block m-auto" alt="she hulk" width="200px" height="315px">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/movies/stranger_things.png" class="d-block m-auto" alt="strager things" width="200px"
+              height="315px">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/movies/moon_knight.png" class="d-block m-auto" alt="moon knight" width="200px"
+              height="315px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mobileTvSeries" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mobileTvSeries" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="d-flex justify-content-between w-75 mt-4">
+        <h5 class="text-white mb-3">Popular Movies</h5>
+        <p class="text-white-50 see-all">See All</p>
+      </div>
+      <div id="popular" class="carousel carousel-light slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/img/movies/the_gray_men.png" class="d-block m-auto" alt="the gray man" width="200px"
+              height="315px">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/img/movies/day_shift.png" class="d-block m-auto" alt="day shift" width="200px" height="315px">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/movies/purple_heart.png" class="d-block m-auto" alt="purple hearth" width="200px"
+              height="315px">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/movies/oprhan.png" class="d-block m-auto" alt="orphan" width="200px" height="315px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#popular" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#popular" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Pilihan Genre di Sisi Kanan -->
+  <div class="genre-selection">
+    <div class="d-flex justify-content-between p-2" style="margin-left: -1.5rem;">
+      <h4 class="text-white">Categories</h4>
+      <p class="text-white-50 mt-1" style="font-size: 14px;">
+        <a href="#" id="uncheckCategories">Uncheck all</a>
+      </p>
+    </div>
+    <div class="check-box">
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Action</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Adventure</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Animated</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Comedy</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Crime</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Fantasy</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+    </div>
+
+    <div class="d-flex justify-content-between p-2 mt-3" style="margin-left: -1.5rem;">
+      <h4 class="text-white">Services</h4>
+      <p class="text-white-50 mt-2" style="font-size: 14px;">
+        <a href="#" id="uncheckServices">Uncheck all</a>
+      </p>
+    </div>
+    <div class="check-box">
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Netflix</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Prime Video</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">Disney+</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <div class="d-flex justify-content-between p-2">
+        <p class="fw-semibold">HBO Max</p>
+        <input class="mb-2 form-check-input" type="checkbox" name="action" id="action">
+      </div>
+      <div class="w-100 border-bottom-side"></div>
+      <script src="/src/assets/js/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      
 </body>
 
 </html>

@@ -1,60 +1,40 @@
-.title-sidekanan a {
-  margin-top: 2rem;
-  margin-right: 1rem;
-  text-decoration: none;
-}
-
-.uncheck1 a {
-  position: relative;
-  top: -10px;
-  left: 105px;
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.uncheck2 a {
-  position: relative;
-  bottom: 10px;
-  left: 100px;
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.kluargakanan {
+.genre-selection {
   height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  width: 250px;
+  overflow-y: auto;
+}
+
+.check-box {
+  color: white;
   width: 100%;
-}
-
-.kluargakanan .checkbox {
-  margin: auto;
-  width: 300px;
+  padding: 10px;
   height: auto;
-  flex-shrink: 0;
-  background-color: #212121;
-  border-radius: 30px;
-  padding: 7px 12px 7px 12px;
-  color: #ffffff;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  border-radius: 10px;
+  background-color: rgba(232, 232, 232, 0.10);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.kluargakanan .checkbox .minibox {
-  overflow: hidden;
-  border-bottom: 1px solid #ffffff;
-  width: 235px;
-  height: 30px;
-  margin: 10px auto;
-  background-color: #212121;
-  padding: 7px 5px 7px 5px;
-  font-size: 18px;
+.check-box2 {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  border-radius: 10px;
+  background-color: rgba(232, 232, 232, 0.10);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.checkbox .lebih {
-  width: 254px;
-  height: 10px;
-  text-align: center;
+.check-box .border-bottom-side {
+  border-bottom: 2px solid rgba(232, 232, 232, .15);
+  margin-top: -1rem;
 }

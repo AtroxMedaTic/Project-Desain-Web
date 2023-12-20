@@ -1,40 +1,49 @@
-const account = [
-    {username: 'admin@gmail.com', password: 'admin'},
-];
-
 function active() {
-  document.addEventListener('DOMContentLoaded', function () {
-    const links = document.querySelectorAll('.sidebar .main .navbar .sidebar-menu a');
-
-    links.forEach(function (link) {
-    link.addEventListener('click', function () {
-        links.forEach(function (l) {
-          l.classList.remove('active-link');
-        });
-        this.classList.add('active-link');
-      });
+  document.querySelectorAll('ul li a').forEach(link => {
+    link.addEventListener('click', function() {
+      document.querySelectorAll('ul li a').forEach(link => link.classList.remove('active'));
+      this.classList.add('active');
     });
   });
 }
 
-const userName = document.getElementById('username');
-const passWord = document.getElementById('password');
-const subMit = document.getElementById('submit');
+function toggleSidebar() {
+  const sideNav = document.querySelector('.side-nav');
+  sideNav.style.left = sideNav.style.left === '0px' ? '-250px' : '0px';
+}
 
-subMit.addEventListener('click', () => {
-    validate(userName, passWord, account);
+function uncheckAllCheckboxes(element) {
+  var checkboxes = element.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach(function (checkbox) {
+    checkbox.checked = false;
+  });
+}
+
+document.getElementById('uncheckCategories').addEventListener('click', function (event) {
+  event.preventDefault();
+  var categoriesSection = document.querySelector('.genre-selection .check-box:nth-child(2)');
+  uncheckAllCheckboxes(categoriesSection);
 });
 
-function validate(userName, passWord, account) {
-        for (let i in account) {
-            if (userName.value === account[i].username && passWord.value === account[i].password) {
-              alert('Login successfully');
-              document.getElementsByTagName("form")[0].setAttribute("action", "src//views/homepage.html");
-            } else {
-                alert('sign in failed');
-                document.getElementsByTagName("form")[0].removeAttribute("action");
-            }
-        }
-    }
+document.getElementById('uncheckServices').addEventListener('click', function (event) {
+  event.preventDefault();
+  var servicesSection = document.querySelector('.genre-selection .check-box:nth-child(4)');
+  uncheckAllCheckboxes(servicesSection);
+});
+
+function search(){
+  const value = document.querySelector('input').value;
+  const iconSearch = document.querySelector('.search-icon');
+
+  if(value !== ''){
+    iconSearch.style.display = 'none';
+  } else {
+    iconSearch.style.display = 'block';
+  }
+
+}
 
 active();
+toggleSidebar();
+uncheckAllCheckboxes();
+
