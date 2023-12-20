@@ -51,7 +51,26 @@
   left: -2rem;
 }
 
-#uncheckCategories, #uncheckServices {
+#uncheckCategories,
+#uncheckServices {
   color: white;
   text-decoration: none;
+}
+
+.main-content .full-screen .movie {
+  text-decoration: none;
+}
+
+.main-content .full-screen .movie .rating {
+  position: absolute;
+  z-index: 1;
+  margin-right: .3px;
+  color: yellow;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 3px;
+  border-radius: 0 20px 0 0;
+  -webkit-border-radius: 0 20px 0 0;
+  -moz-border-radius: 0 20px 0 0;
+  -ms-border-radius: 0 20px 0 0;
+  -o-border-radius: 0 20px 0 0;
 }
