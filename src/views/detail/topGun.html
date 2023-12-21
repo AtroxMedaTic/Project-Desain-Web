@@ -58,19 +58,19 @@
           </a>
         </li>
         <li class="list-group-item">
-          <a href="/src/views/movies.html" class="d-flex">
+          <a href="/src/views/movies.html" class="d-flex active">
             <i class="ri-movie-line mx-2"></i>
             <p>Movies</p>
           </a>
         </li>
         <li class="list-group-item">
-          <a href="#tvseries" class="d-flex">
+          <a href="/src/views/homepage.html#tvseries" class="d-flex">
             <i class="ri-tv-2-line mx-2"></i>
             <p>TV Series</p>
           </a>
         </li>
         <li class="list-group-item">
-          <a href="#upcoming" class="d-flex">
+          <a href="/src/views/homepage.html#upcoming" class="d-flex">
             <i class="ri-calendar-2-line mx-2"></i>
             <p>Upcoming</p>
           </a>
@@ -94,7 +94,7 @@
             <i class="ri-search-line"></i>
           </span>
           <input class="form-control w-75 bg-dark text-light placeholder-white rounded-5" type="search"
-            placeholder="     Search" aria-label="Search">
+            placeholder="     Search" aria-label="Search" id="search" onkeyup="search()">
           <div class="side-right d-flex justify-content-end">
             <i class="ri-notification-line text-white-50" style="font-size: 30pt"></i>
             <img src="/img/cloud-clouds.gif" alt="Profil Pengguna" class="rounded-circle mt-2 mx-3" width="40px"
@@ -115,10 +115,10 @@
         <p style="font-size: 1.4375rem;">Top Gun: Maverick ~ 2022 ~ PG-13 ~ 2h 10m </p>
         <div class="badges">
           <a href="#">
-            <span class="btn btn-outline-light text-grey fw-bold rounded-5 mx-3">Drama</span>
+            <span class="btn btn-outline-light text-bg-dark fw-bold rounded-5 mx-3">Drama</span>
           </a>
           <a href="#">
-            <span class="btn btn-outline-light text-grey fw-bold rounded-5">Action</span>
+            <span class="btn btn-outline-light text-bg-dark fw-bold rounded-5">Action</span>
           </a>
         </div>
       </div>
@@ -130,19 +130,15 @@
       </p>
       <p class="border-bottom-detail">Director : <span class="fw-bold" style="color: #3DD2CC;">Joseph Kosinski</span>
       </p>
-      <p class="border-bottom-detail">Writers : <span class="fw-bold" style="color: #3DD2CC;">Jim Cash, Jack Epps Jr,
-          Peter
-          Craig</span></p>
-      <p class="border-bottom-detail">Stars : <span class="fw-bold" style="color: #3DD2CC;">Tom Cruise, Jennifer
-          Connelly,
-          Miles Teller</span></p>
+      <p class="border-bottom-detail">Writers : <span class="fw-bold" style="color: #3DD2CC;">Jim Cash, Jack Epps Jr, Peter Craig</span></p>
+      <p class="border-bottom-detail">Stars : <span class="fw-bold" style="color: #3DD2CC;">Tom Cruise, Jennifer Connelly, Miles Teller</span></p>
       <div class="d-flex">
         <p class="btn text-bg-info text-white fw-bold">Top rated movie #65</p>
         <p class="btn text-bg-dark text-white fw-bold w-75 mx-2 text-start">Awards 9
           nomination</p>
       </div>
       <p style="font-size: 1.5rem; font-weight:bold">Top Cast : </p>
-      <div class="mx-2 d-flex text-center">
+      <div class="mx-2 d-flex text-center flex-wrap">
         <div class="pemain" style="margin-right: 1rem;">
           <img src="/img/pemain/top-gun/tom_cruise.jpg" alt="tom cruise" class="rounded-circle" height="150px"
             width="150px">
@@ -189,13 +185,8 @@
     </div>
   </div>
 
+  <script src="/src/assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    function toggleSidebar() {
-      const sideNav = document.querySelector('.side-nav');
-      sideNav.style.left = sideNav.style.left === '0px' ? '-250px' : '0px';
-    }
-  </script>
 </body>
 
 </html>
