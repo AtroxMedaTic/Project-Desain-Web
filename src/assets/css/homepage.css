@@ -150,7 +150,44 @@ line-height: normal;
   left: -2rem;
 }
 
-#uncheckCategories, #uncheckServices {
+#uncheckCategories,
+#uncheckServices {
   color: white;
   text-decoration: none;
+}
+
+.main-content .full-screen .movie {
+  text-decoration: none;
+}
+
+.main-content .full-screen .movie .rating {
+  position: absolute;
+  z-index: 1;
+  margin-right: .3px;
+  color: yellow;
+  background: rgba(232, 232, 232, 0.15);
+  backdrop-filter: blur(2.5px);
+  padding: 5px;
+  border-radius: 0 20px 0 20px;
+  -webkit-border-radius: 0 20px 0 20px;
+  -moz-border-radius: 0 20px 0 20px;
+  -ms-border-radius: 0 20px 0 20px;
+  -o-border-radius: 0 20px 0 20px;
+}
+
+.main-content .full-screen .cover .layout {
+  width: 200px;
+  height: 315px;
+  opacity: 0;
+}
+
+.main-content .full-screen .cover a,
+.main-content .full-screen .cover p {
+  opacity: 0;
+}
+
+.main-content .full-screen .movie:hover .cover .layout,
+.main-content .full-screen .movie:hover .cover a,
+.main-content .full-screen .movie:hover .cover p {
+  opacity: 0.9;
 }
