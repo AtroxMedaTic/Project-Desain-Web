@@ -43,7 +43,24 @@ function search(){
 
 }
 
+function tampilkanRating(elemen) {
+  const elemenRating = elemen.querySelector('.rating');
+  if (elemenRating) {
+    elemenRating.style.display = 'block';
+  }
+}
+
+function sembunyikanRating(elemen) {
+  const elemenRating = elemen.querySelector('.rating');
+  if (elemenRating) {
+    elemenRating.style.display = 'none';
+  }
+}
+
+
 active();
 toggleSidebar();
 uncheckAllCheckboxes();
+tampilkanRating();
+sembunyikanRating();
 
