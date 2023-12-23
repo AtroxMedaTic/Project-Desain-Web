@@ -66,11 +66,28 @@
   z-index: 1;
   margin-right: .3px;
   color: yellow;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .2);
   padding: 3px;
   border-radius: 0 20px 0 0;
   -webkit-border-radius: 0 20px 0 0;
   -moz-border-radius: 0 20px 0 0;
   -ms-border-radius: 0 20px 0 0;
   -o-border-radius: 0 20px 0 0;
+}
+
+.main-content .full-screen .cover .layout {
+  width: 200px;
+  height: 315px;
+  opacity: 0;
+}
+
+.main-content .full-screen .cover a,
+.main-content .full-screen .cover p {
+  opacity: 0;
+}
+
+.main-content .full-screen .movie:hover .cover .layout,
+.main-content .full-screen .movie:hover .cover a,
+.main-content .full-screen .movie:hover .cover p {
+  opacity: 0.9;
 }
