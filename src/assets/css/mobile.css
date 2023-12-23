@@ -90,6 +90,18 @@
   .pemain {
     justify-content: center;
   }
+
+  .main-content .mobile-screen .rating {
+    background: rgba(232, 232, 232, 0.15);
+    backdrop-filter: blur(2.5px);
+    color: yellow;
+    padding: 5px;
+    border-radius: 0 20px 0 20px;
+    -webkit-border-radius: 0 20px 0 20px;
+    -moz-border-radius: 0 20px 0 20px;
+    -ms-border-radius: 0 20px 0 20px;
+    -o-border-radius: 0 20px 0 20px;
+  }
 }
 
 @media (max-width: 487px) {
