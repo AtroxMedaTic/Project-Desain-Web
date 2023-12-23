@@ -66,13 +66,14 @@
   z-index: 1;
   margin-right: .3px;
   color: yellow;
-  background-color: rgba(0, 0, 0, .2);
-  padding: 3px;
-  border-radius: 0 20px 0 0;
-  -webkit-border-radius: 0 20px 0 0;
-  -moz-border-radius: 0 20px 0 0;
-  -ms-border-radius: 0 20px 0 0;
-  -o-border-radius: 0 20px 0 0;
+  background: rgba(232, 232, 232, 0.15);
+  backdrop-filter: blur(2.5px);
+  padding: 5px;
+  border-radius: 0 20px 0 20px;
+  -webkit-border-radius: 0 20px 0 20px;
+  -moz-border-radius: 0 20px 0 20px;
+  -ms-border-radius: 0 20px 0 20px;
+  -o-border-radius: 0 20px 0 20px;
 }
 
 .main-content .full-screen .cover .layout {
