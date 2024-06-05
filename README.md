@@ -4,7 +4,7 @@ Ini adalah Project Blue Nirvana yang dibuat oleh Mahasiswa Universitas Pancasila
 
 - [Daffa Fathan](https://github.com/daffa09) (4522210082)
 - [Fathan Rachel](https://github.com/Fathanrachel) (4522210071)
-- [Antonious Valentino](https://github.com/BrohKane) (4522210109)
+- [Antonius Valentino](https://github.com/AtroxMedaTic) (4522210109)
 - [Firja Rakha](https://github.com/FirjaRakha) (4522210072)
 - [Tegar Gemilang](https://github.com/TegarGemilang02) (4522210095)
 
